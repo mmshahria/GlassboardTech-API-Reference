@@ -1,0 +1,1 @@
+Add a banking account to the specified profile. Supply the unique path parameters `profileId`, `accountId`, and `subAccountId` in the correct canonical path for adding a banking account to the profile.
