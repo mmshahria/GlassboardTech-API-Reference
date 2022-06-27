@@ -1,0 +1,1 @@
+Operate a KYC check by supplying the unique `profileId` in the JSON request body.

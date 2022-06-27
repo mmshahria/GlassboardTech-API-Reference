@@ -1,0 +1,1 @@
+Update existing document records of an asset to the current user's data source based on the uploaded files that are supplied using `multipart/form-data` file upload mechanism. Supply the unique `assetId` and `fileId` in the path parameter to execute an update operation to a specific asset for the current user.

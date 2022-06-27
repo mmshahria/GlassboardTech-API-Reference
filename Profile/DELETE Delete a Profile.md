@@ -1,0 +1,1 @@
+Delete an existing user profile records from the current user's (API end user) data source. Supply the unique `profileId` in the path parameter to execute delete operation to a specific user profile for the current user (API end user).

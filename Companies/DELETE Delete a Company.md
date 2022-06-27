@@ -1,0 +1,1 @@
+Delete an existing company records from the current user's data source. Supply the unique `companyId` in the path parameter to execute delete operation to a specific company resource for the current user.

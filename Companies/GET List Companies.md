@@ -1,0 +1,1 @@
+Retrieves the list of companies for the current user.

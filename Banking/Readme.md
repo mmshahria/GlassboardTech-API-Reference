@@ -1,0 +1,1 @@
+The Banking resource outlines the concept of banks being a banking services provider, with functions of the bank - opening and maintaining an account, making payments, and providing value-added services.

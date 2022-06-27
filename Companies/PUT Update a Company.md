@@ -1,0 +1,1 @@
+Update existing company records to the current user's data source based on the input parameters `key:value` pair that are supplied in the JSON format. Supply the unique `companyId` in the path parameter to execute an update operation to a specific company resource for the current user.

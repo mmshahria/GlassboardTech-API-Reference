@@ -1,0 +1,1 @@
+Search API (POST method) uses the POST method to search the companies for the current users. It searches the companies based on the input parameters that are provided in the JSON format. The advantage of using the search API (POST method) over the search API (GET method) is that you can use any slot names to search for the exact company or more confined results.

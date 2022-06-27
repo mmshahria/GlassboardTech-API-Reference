@@ -1,0 +1,1 @@
+Delete an existing bank account record from the current user user profile's data source. Supply the unique `profileId`, `accountId` and `subAccountId`  canonically in the path parameter to execute delete operation to a specific bank account for the current user.

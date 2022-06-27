@@ -1,0 +1,1 @@
+Add a banking user to the specified profile. Supply the unique `profileId` in the correct canonical path for adding a banking user to the profile. Supply the `key:value` pairs that are necessary for describing the banking user in the JSON request body.

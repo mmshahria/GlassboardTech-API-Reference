@@ -1,0 +1,1 @@
+Delete an entire asset resource from the current user's data source. Supply the unique `assetId` in the path parameter to execute delete operation to a specific asset resource for the current user.

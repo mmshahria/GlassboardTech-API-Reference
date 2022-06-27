@@ -1,0 +1,1 @@
+Operate a KYC check by supplying required data in the JSON request body.

@@ -1,0 +1,1 @@
+Delete an existing document records of an asset from the current user's data source. Supply the unique `assetId` and `fileId` in the path parameter to execute delete operation to a specific asset document for the current user.

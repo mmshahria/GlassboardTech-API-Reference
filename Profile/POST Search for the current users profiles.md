@@ -1,0 +1,3 @@
+Search API (POST method) uses the POST method to search for a profile from the current user's (API end user) data source. It searches the profile using the input parameters that are supplied in request body. 
+
+The advantage of using the search API (POST method) over the search API (GET method) is that, it uses search object slots specified by the user (API end user) to search for the perfectly matched user profile or more confined results.

@@ -1,0 +1,1 @@
+A Profile contains all the details for a individual, trust, joint account, etc. These profiles can be defined and used for a variety of purposes, such as: organizing deals, making investments, or creating assets. A profile is used to complete tasks such as generating documents and performing KYC/KYB

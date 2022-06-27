@@ -1,0 +1,1 @@
+Create a company data entry in the database. Supply the `key:value` pairs that are necessary for describing a company. Data in the request body should follow the JSON data formatting.

@@ -1,0 +1,3 @@
+Deal is an opportunity to raise funds for a business or startup created by a `account-type` organizer. It is a fundamental object that represents the opportunity into which user make an investment. This resource outlines the management of data and methods. 
+
+> Conceptually, a deal is a method to bring investors to an opportunity. Running a deal via the API uses a few different data objects including a Deal, an Entity, Invitations and more. Specifically, a Deal is a fundamental data object that can be used to provide details about an opportunity, invite investors, or manage accounts.
