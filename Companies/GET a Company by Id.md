@@ -23,6 +23,7 @@ The name of the state refers to the state where the company was registered.
 
 <strong>address<strong> `object`
 The contact Address object descriptor of the company.
+
 * <strong>address1*<strong> `string` <br> Company contact address Line 1.
 
 * <strong>address2</strong> `string` <br> Company contact address Line 2.
@@ -61,9 +62,9 @@ The tax contact object descriptor that encloses the  validated tax contact infor
 
 <strong>entityType<strong> `enum`
 
-The Entity Type of company. Allowed: `LLC┃Corporation┃Non-Profit┃LP┃LLP┃GP┃DBA`
+The Entity Type of company. Allowed `enum` values are `LLC┃Corporation┃Non-Profit┃LP┃LLP┃GP┃DBA`.
 
-<strong>individuals<strong> [object]
+<strong>individuals<strong> `[object]`
 
 Array object descriptor that encloses the detailed lists of each member associated with the company.
 
@@ -121,10 +122,10 @@ Legal Inc Order Details:
 
 * <strong>status<strong> `string`
 
-Order Status
+Order Status.
 
 * <strong>statusDescription<strong> `string`
-Status Description
+Status Description.
 
 * <strong>ein<strong> `string`
 

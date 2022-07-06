@@ -199,8 +199,18 @@ Arbitration State.
 
 How Will Be Business Managed?
 
- How will the business be managed (can have 1-many owners/managers).
+How will the business be managed (can have 1-many owners/managers).
  
- Allowed `Solely by the owner(s) (Member-managed)┃Some, but not all, owners (Manager-managed)┃By the owner(s) and other managers (Manager-managed)┃Solely by the manager(s) (Manager-Managed)`.
+Allowed `Solely by the owner(s) (Member-managed)┃Some, but not all, owners (Manager-managed)┃By the owner(s) and other managers (Manager-managed)┃Solely by the manager(s) (Manager-Managed)`.
 
- 
+ <strong>page </strong> `number`
+
+The number of page returned for the API call. This attribute can be used as a query string parameter to specify the number of companies the API call shall return.
+
+<strong>perPage </strong> `number`
+
+The  total count of the list of companies returned per page. This attribute can be used as a query string parameter.
+
+<strong>totalCount </strong> `number`
+
+Total count of the companies list the API call returned.

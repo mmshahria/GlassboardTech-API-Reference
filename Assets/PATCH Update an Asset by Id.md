@@ -1,4 +1,6 @@
-Partially modify existing asset records of an asset resource to the current user's data source based on the supplied `key:value` pairs in the JSON format. Supply the unique `assetId` in the path parameter to execute an partially update operation to a specific asset for the current user.
+Partially modify existing asset records of an asset resource to the current user's data source based on the supplied `key: value` pairs in the JSON format. Supply the unique `assetId` in the path parameter to execute a partial update operation to a specific asset for the current user.
+
+> PATCH is a method of modifying resources where the client sends partial data that is to be updated without modifying the entire data.
 
 # Parameters
 <strong> name* </strong> `string` 

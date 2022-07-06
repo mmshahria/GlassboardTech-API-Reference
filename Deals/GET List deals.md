@@ -200,16 +200,14 @@ Has the value _true_ if a specified deal is deleted by the deal **organizer** or
 
 * <strong> estimatedCloseCount </strong> `number` <br> Use case undefined.
 
-
-
 <strong>page</strong> `number`
 
-The total number of page. 
+The number of page returned for the API call. This attribute can be used as a query string parameter.
 
 <strong>perPage</strong> `number`
 
-The total count of deals returned per page. This can be specified as a query parameter.
+The total count of deals returned per page. This can be specified as a query string parameter.
 
 <strong>totalCount</strong> `number`
 
-Total count of the deals returned.
+Total count of the deals list the API call returned.

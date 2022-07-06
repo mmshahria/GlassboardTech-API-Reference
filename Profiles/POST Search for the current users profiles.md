@@ -6,7 +6,7 @@ The advantage of using the search API (POST method) over the search API (GET met
 
 **perPage** `number`
 
-The  total count of the list of search results returned per page. Specify the number of deals per page that the API call shall return.
+The  total count of the list of search results returned per page. Specify the number of profiles per page that the API call shall return.
 
 **page**  `number`
 
