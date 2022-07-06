@@ -126,7 +126,7 @@ JSON object descriptor that encloses the details of legal documents for this sub
 * <strong>mergedInvestorSA<strong> `string` </br> 
 * <strong>mergedCounterSignedOA<strong> `string` </br> 
 * <strong>mergedCounterSignedSA<strong> `string` </br> 
-* <strong>taxes<strong> `[object]`
+* <strong>taxes<strong> `[object]` </br> 
 JSON object descriptor that encloses tax-related information. Each _array_ index consists of `year` and a unique file identifier of taxes.
   * <strong>year<strong> `number` </br> Subscription's taxable year.
   * <strong>fileId<strong> `string` </br> A unique identifier of the legal document or file associated with the tax.
