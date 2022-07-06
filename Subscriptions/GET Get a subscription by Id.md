@@ -1,0 +1,1 @@
+Retrieves an specified subscription for a valid identifier. Supply the unique `subscriptionId` and this endpoint will respond the corresponding subscription details for the current user.

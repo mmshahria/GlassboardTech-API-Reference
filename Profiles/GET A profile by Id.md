@@ -251,7 +251,7 @@ Investor Status representation for Document Generation. Numbers in index corresp
 
 External Banking User.
 
-  * <strong> id </strong> `string`
+  * <strong> id </strong> `string` </br>
   * <strong> accounts </strong> `[object]` </br> An _array_ list contains a set of `key:value` pairs.
 
 <strong> purchaserStatus</strong> `[number]` An _array_ list of numbers.
