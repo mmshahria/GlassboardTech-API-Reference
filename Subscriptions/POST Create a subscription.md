@@ -132,6 +132,7 @@ JSON object descriptor that encloses tax-related information. Each _array_ index
   * <strong>fileId<strong> `string` </br> A unique identifier of the legal document or file associated with the tax.
 
 <strong>files<strong> `[string]`
+
 Array Object descriptor that encloses the list of legal documents or files associated with the subscription.
 
 <strong>closeDoc<strong> `string`
@@ -157,15 +158,19 @@ The date & time at which the subscription was deleted.
 Has the value true if the subscription is deleted or the value false if it's not deleted.
 
 <strong>acquisitionMethod<strong> `enum`
+
 Subscriber acquisition Method for this subscirption.Predefined `enum` values are `DIRECT_LINK┃INVITATION`.
 
 <strong>ownerId<strong> `string`
+
 The unique owner identifier of the subscripton.
 
 <strong>profileId<strong> `string`
+
 A unique identifier assigned by the system while creating a user profile as an individual or an entity.
 
 <strong>sideLetter<strong> `object`
+
 JSON object descriptor that encloses the side letter related information.
 
 * <strong>managementFee<strong> `object` </br>
@@ -177,22 +182,18 @@ Object descriptor that encloses the  information for management fee deduction.
   * <strong>type<strong> `string` </br> Type of management fee.
   * <strong>feesPaymentMethod<strong> `string` </br> Management fees payment method.
   * <strong>isRecurring<strong> `boolean` </br> 
-
-
 * <strong>organizerCarryPercentage<strong> `object`
   JSON object descriptor that encloses the organizer Carry Percentage related information.
-
   > Carry Percentage means the rate of return percentage above the initial investment after one year that needs to be paid to a deal **organizer**. It is in the deal **organizer's** discretion as to whether the Carry Percentage will be lower, and such determination may be made up until the date of the Initial Closing.
-
-  * <strong>type<strong>: `enum`
+  * <strong>type<strong>: `enum` </br>
 Type of Organizer Carry percentage. Predefined `enum` values are  `percent┃flat`.
-  * <strong>amount<strong>: `number`
+  * <strong>amount<strong>: `number` </br>
 The amount of Organizer Carry percentage. Constraints `multiple of 0.01`
-  * <strong>tiers<strong>: `[object]`
+  * <strong>tiers<strong>: `[object]` </br>
 JSON _array_ object descriptor that encloses classification tier of Organizer carry percentage.
-    * <strong>breakpoint<strong> `number`
+    * <strong>breakpoint<strong> `number` </br>
 Carry Percentage Breakpoint.
-    * <strong>amount<strong> `number`
+    * <strong>amount<strong> `number` </br>
 Carry Percentage Amount. Constraints `Min 0┃Max 100┃ multiple of 0.001`
 
 
