@@ -8,70 +8,80 @@ A unique identifier assigned by the system while creating a user profile as an i
 
 <strong> minInvestmentAmount* </strong> `number`
 
-A minimum investment amount (in the currency predefined) in a deal that restricts investors from investing below this amount. Minimum required value is 0 while used as parameter for creating a deal.
+A minimum investment amount (in the currency predefined) in a deal that restricts investors from investing below this amount. Minimum required value is 0 while used as parameter for creating a deal.Constraints `Min 0┃ multiple of 0.01`
 
 <strong> previouslyRaisedAmount </strong> `number`
 
-The total amount (in the currency predefined) raised previously for the deal or the portfolio company.  Minimum required value is 0 while used as parameter.
+The total amount (in the currency predefined) raised previously for this deal or the portfolio company.  The minimum required value is 0 while used as a parameter. Constraints `Min 0┃ multiple of 0.01`
 
 <strong> totalPurchaseAmount </strong> `number`
 
-Use case undefined.
+Total Purchase Amount (in the currency predefined) for this deal or the portfolio company. Constraints `Min 0┃ multiple of 0.01`
 
-<strong> organizerCarryPercentage </strong> `number`
+<strong> organizerCarryPercentage </strong> `object`
+JSON object descriptor that encloses the organizer Carry Percentage related information.
 
-Carry Percentage means the rate of return percentage above the initial investment after one year that needs to be paid to a deal **organizer**. It is in the deal **organizer's** discretion as to whether the Carry Percentage will be lower, and such determination may be made up until the date of the Initial Closing. The Carry Percentage equals the sum of organizer Carry Percentage and Additional Carry Percentage. 
-
-_Data-type_ `number` is used for any numeric type, either integers or floating point numbers. A valid carry percentage value can not exceed 20.
+> Carry Percentage means the rate of return percentage above the initial investment after one year that needs to be paid to a deal **organizer**. It is in the deal **organizer's** discretion as to whether the Carry Percentage will be lower, and such determination may be made up until the date of the Initial Closing. The Carry Percentage equals the sum of organizer Carry Percentage and Additional Carry Percentage. 
+* <strong>type<strong>: `enum` </br>
+Type of Organizer Carry percentage. Predefined `enum` values are  `percent┃flat`.
+  * <strong>amount<strong>: `number` </br>
+The amount of Organizer Carry percentage. Constraints `multiple of 0.01`
+  * <strong>tiers<strong>: `[object]` </br>
+JSON _array_ object descriptor that encloses classification tier of Organizer carry percentage.
+    * <strong>breakpoint<strong> `number` </br>
+Carry Percentage Breakpoint.
+    * <strong>amount<strong> `number` </br>
+Carry Percentage Amount. Constraints `Min 0┃Max 100┃ multiple of 0.001`
 
 <strong> additionalCarryRecipients </strong> `[object]`
 
-Additional carry recipients. Data must be formatted as JSON _array_ object. 
-
-* <strong> individual </strong> `object`</br> Additional carry recipients can either be any _individual_ or _entity_.  
-    * <strong> id </strong> `string` </br> A unique identifier for additional carry recipient specified by a deal organizer for this deal.
-    * <strong> ownerId </strong> `string` </br> A unique identifier for the owner for this.
-    * <strong> name </strong> `string` </br> Full name of the additional carry recipient specified by a deal **organizer**. A valid value must be 2 to 1024 characters.
-    * <strong> type </strong> `string` </br> Type of the additional carry recipient. Can be useful to define the type of carry recipients.
-        * <strong> title </strong> `string` </br> Use case undefined.
+JSON _array_ Object descriptor that encloses the list of additional Carry Recipients associated with this deal.
+* <strong> individual </strong> `object`</br> JSON object descriptor that encloses _individual_ (a natural person or _entity_) related information.Additional carry recipients can either be any individual or entity.
+    * <strong> id </strong> `string` </br> A unique identifier for this additional carry recipient assigned by the system. 
+    * <strong> ownerId </strong> `string` </br> A unique owner identifier for this additional Carry Recipient.
+    * <strong> name </strong> `string` </br> Full name of the additional carry recipient specified by deal **organizer**. A valid value must be 2 to 1024 characters.
+    * <strong> type </strong> `string` </br> Type of the additional carry recipient. Can be useful to define the type of _individual_.
+    * <strong> title </strong> `string` </br>The title of the signer/additional carry recipient. 
+    > In some settings, a person's title may consist of one or more words placed before or after their given name. There are a number of ways it might be used, including heredity, official status, or academic or professional certification.
     * <strong> isUSBased </strong> `boolean` </br> Has the value _true_ if the carry recipient is based on U.S. or the value _false_ if the recipient is based on other countries.
-    *   <strong> address </strong> `object` </br> Additional carry recipient's address. Data must be formatted as JSON object.
-        * <strong> address1* </strong> `string` </br> Address line 1 (e.g., street, PO Box, or company name).
-        * <strong> address2 </strong> `string` </br> Address line 2 (e.g., apartment, suite, unit, or building).
-        * <strong> city* </strong> `string` </br> City, district, suburb, town, or village.
-            * <strong> state </strong> `string` </br> State, county, province, or region.
-        * <strong> postalCode* </strong> `string` </br> ZIP or postal code.
-        *  <strong> country* </strong> `string` </br> Can be used for full country name or Two-letter country code.
-*   <strong> phone </strong> `string` </br> Additional carry recipients phone number.
-*   <strong> email </strong> `string` </br> Additional carry recipients email address.
+    *   <strong> address </strong> `object` </br> JSON object descriptor that encloses this Additional carry recipient's address.
+        * <strong> address1* </strong> `string` </br> Address line 1 (e.g., street, PO Box, or company name).A valid value must be 2 to 1024 characters.
+        * <strong> address2 </strong> `string` </br> Address line 2 (e.g., apartment, suite, unit, or building).A valid value must be 2 to 1024 characters.
+        * <strong> city* </strong> `string` </br> City, district, suburb, town, or village.A valid value must be 2 to 1024 characters.
+        * <strong> state </strong> `string` </br> State, county, province, or region.A valid value must be 2 to 1024 characters.
+        * <strong> postalCode* </strong> `string` </br> ZIP or postal code.A valid value must be 2 to 1024 characters.
+        *  <strong> country* </strong> `string` </br> Can be used for full country name or Two-letter country code.A valid value must be 2 to 1024 characters.
+*   <strong> phone </strong> `string` </br> Additional carry recipient's phone number.
+*   <strong> email </strong> `string` </br> Additional carry recipient's email address.
 *   <strong> taxDetails `object` </strong> 
     *   <strong> type* </strong> `enum` </br> Type of tax identification document. Predefined `enum` values are  `ssn┃itin┃ftin`.
-    *   <strong> value* </strong> `string` </br> Contains Alphanumeric value of the tax document identification.
+    *   <strong> value* </strong> `string` </br> Contains the Alphanumeric value of the tax document identification.
 *   <strong> dateOfBirth </strong> `string` </br> Date of birth of this additional carry recipient. Data must be formatted as _YY-MM-DD_.
 *   <strong> stateOfFormation </strong> `string` </br> The state of formation if the carry recipient is an entity.
 *   <strong> countryOfFormation </strong> `string` </br> The country of formation if carry recipient is an entity.
-*   <strong> taxIdType </strong> `string` </br> Can be useful for defining the type of tax identification document. 
-*   <strong> taxId</strong> `string` Can be useful to keep records of tax identification specified by a deal **organizer** for an additional carry recipient.
-* <strong> carryPercentage </strong> `number` </br> Additional carry percentage specified by a deal _organizer_. _Data-type_ `number` is used for any numeric type, either integers or floating point numbers. Minimum valid _value-range_ is 0 to 20.
+*   <strong> taxIdType </strong> `string` </br> Type of tax identification document. 
+*   <strong> taxId</strong> `string` Unique tax identification number.
+* <strong> carryPercentage </strong> `number` </br> Additional carry percentage specified by a deal _organizer_. _Data-type_ `number` is used for any numeric type, either integers or floating point numbers. Constraints `Min 0┃Max 100┃ multiple of 0.001`
 
- <strong> name* </strong> `string`
+<strong> name* </strong> `string`
 
-A meaningful name for this deal, often useful for displaying to investors.
+A meaningful name is used throughout to identify this deal.A valid value must be 2 to 1024 characters.
 
-  <strong> description </strong> `string`
+<strong> description </strong> `string`
 The description for this deal. Supports HTML format.
 
-  <strong> targetRaiseAmount* </strong> `number`
+<strong> targetRaiseAmount* </strong> `number`
 
-The target raise amount refers to the estimated amount willing to raise for this deal. _Data-type_ `number` is used for any numeric type, either integers or floating point numbers. Minimum valid value is 0 while used as parameter.
+The target raise amount refers to the estimated amount (in the currency predefined) willing to raise for this deal. _Data-type_ `number` is used for any numeric type, either integers or floating point numbers. Minimum valid value is 0 while used as parameter.Constraints `Min 0┃ multiple of 0.01`
 
   <strong>disabled </strong> `boolean`
 
-Has the value _true_ if a deal exists for raising investment or the value _false_ if a deal is closed. 
+Has the value _true_ if this deal exists for raising investment or the value _false_ if a deal is closed. 
 
- <strong> estimatedCloseDate </strong> `date-time`
+<strong> estimatedCloseDate </strong> `date`
 
-An expected close date and time. Must be formatted as `1970-01-01T00:00:00.000Z`
+An expected `close` date for this deal. Must be formatted as `1970-01-01T00:00:00.000Z`
+> A close can represent the close of the entire deal or just a subset of investments (i.e. a tranche).
 
 <strong> marketing </strong> `object`
 
@@ -83,23 +93,21 @@ A Set of `key-value` pairs representing marketing related information. This can 
    * <strong>tagline</strong> `string`
    > A tagline is a catchphrase or memorable statement associated with the corresponding deal's business entity.
 
- <strong> portfolioCompanyName </strong> `string`
+<strong> portfolioCompanyName </strong> `string`
 
 Portfolio company name for this deal.
 
-> Portfolio company often refers to the company for which a deal _organizer_ raising the funds for and in which investors invest their money. A valid value must be 2 to 1024 characters.
+> Portfolio company often refers to the company for which a deal _organizer_ is raising the investment and in which investors invest their money. A valid value must be 2 to 1024 characters.
 
- <strong> portfolioCompanyState </strong> `string`
+<strong> portfolioCompanyState </strong> `string`
 
 The state address of the portfolio company. A valid value must be 2 to 1024 characters.
 
- <strong> portfolioCompanyEntity </strong> `enum`
+<strong> portfolioCompanyEntity </strong> `enum`
 
 The entity types of the portfolio company. 
 
-Accepted `enum` values are `LIMITED_LIABILITY_COMPANY┃LIMITED_PARTNERSHIP┃C_CORPORATION┃S_CORPORATION┃GENERAL_PARTNERSHIP┃FOREIGN_ENTITY┃CORPORATION`.
-
-The variable must be equal to one of the values that have been predefined for it.
+Accepted `enum` values are `LIMITED_LIABILITY_COMPANY┃LIMITED_PARTNERSHIP┃C_CORPORATION┃S_CORPORATION┃GENERAL_PARTNERSHIP┃FOREIGN_ENTITY┃CORPORATION`.The variable must be equal to one of the values that have been predefined for it.
 
  <strong> securityType </strong> `enum`
 
@@ -107,92 +115,84 @@ The type of the security for this deal. Predefined `enum` security type values a
 
 > Securities are a way for investors to make money by lending them to companies and governments. By buying a share or a bond, an investor is voting for that company's future growth. Securities inject money into the economy, helping both the investor and the issuer. 
 
-  <strong> isPublic </strong> `boolean`
+<strong> isPublic </strong> `boolean`
 
-Has the value _true_ if a deal is visible to public investors for raising investment or the value _false_ if a deal is visible only to the privately invited investors.
+Has the value _true_ if this deal is visible to public investors for raising investment, or is the value _false_ if a deal is visible only to the privately invited investors.
 
-  <strong> requireQualifiedPurchaser </strong> `boolean`
+<strong> requireQualifiedPurchaser </strong> `boolean`
 
-Has the value _true_ if a deal organizer is looking for qualified investors in the platform or the value _false_ if it is not required.
+Has the value _true_ if this deal organizer is looking for qualified investors in the platform or the value _false_ if it is not required.
 
- <strong>id </strong> `string`
+> `Qualified purchaser` means a person with at least $5 million in investments, a company with at least $5 million in investments owned by close relatives, a trust not formed for the investment with at least $5 million in investments, an investment manager with at least $25 million under management, or a company with at least $25 million in investments.
 
-A unique identifier for a specified deal.
-
-  <strong> ownerId </strong> `string`
+<strong> ownerId </strong> `string`
 
 A unique identifier of the owner for this deal. 
 
  <strong> tenantId </strong> `string`
 
-A unique identifier used for API authentication and authorization.
+A unique identifier of the tenant to which the profile belongs.
 
-  <strong> entityId </strong> `string`
+> Tenant refers to the end user of this API and It's required for identity and access management.
+
+<strong> entityId </strong> `string`
 
 A unique identifier for an _entity_.
 
-  <strong> assetIds </strong> `[string]`
+<strong> assetIds </strong> `[string]`
 
-A list of unique identifiers for assets.
+An array object descriptor that encloses the list of unique identifiers for assets associated with this deal.
 
 >Assets act as the investment vehicle for a deal. An asset can take on a variety of forms, including common stock in a business, real estate, cryptocurrency, or even fractional ownership of a private jet.
 
-  <strong> files </strong> `[string]`
+<strong> files </strong> `[string]`
+Array Object descriptor that encloses the list of URLs or legal documents or file paths referencing the files associated with this deal, meant to be displayable to the investors.
 
-A list of URLs  or file paths referencing the files attached to this deal by an _organizer_, meant to be displayable to the investors. Values are returned as an _array_ list.
+<strong> organizerFiles </strong> `[string]`
+Array Object descriptor that encloses the list of URLs or legal documents or file paths referencing the organizer files associated with this deal.
 
-  <strong> organizerFiles </strong> `[string]`
+<strong> portfolioCompanyContact `object` </strong>
 
-A list of URLs or file paths referencing the files attached to this deal by an _organizer_. Values are returned as an _array_ list.
+JSON object descriptor encloses the Contact details of the portfolio company for this deal.
 
-  <strong> portfolioCompanyContact `object` </strong>
-
-Contact details of the portfolio company. Can be useful to store additional contact details of a portfolio company as a set of `key:value` pairs.
-
-  <strong> status* </strong> `enum`
+<strong> status* </strong> `enum`
 
 Describes the deal’s current status. 
 
 _Data-type_ `enum` consists of predefined status values `DRAFT┃IN-PROVISIONING┃OPEN┃IN CLOSING┃CLOSED.` The variable must be equal to one of the values that have been predefined for it while updating the deal _status_.
 
 
-  <strong> createdAt </strong> `date-time`
+<strong> createdAt </strong> `date-time`
 
 Describes the date & time at which the deal was created. Data formatted as `1970-01-01T00:00:00.000Z`
 
-  <strong> updatedAt </strong> `date-time`
+<strong> updatedAt </strong> `date-time`
 
 Describes the date & time at which the deal was last updated. Data formatted as `1970-01-01T00:00:00.000Z`.
 
-  <strong> ownersDealUrl </strong> `string`
+<strong> ownersDealUrl </strong> `string`
 
-Use case undefined.
-
- <strong> deletedAt </strong> `date-time`
+<strong> deletedAt </strong> `date-time`
 
 Describes the date & time at which the deal was deleted. Data formatted as `1970-01-01T00:00:00.000Z`
 
 
-  <strong> isDeleted </strong> `boolean`
+<strong> isDeleted </strong> `boolean`
 
-Has the value _true_ if a specified deal is deleted by the deal **organizer** or the value _false_ if the deal has other __status__.
+Has the value _true_ if a specified deal is deleted the value _false_ if the deal has other __status__.
 
-  <strong> additionalProperties </strong> `object`
+<strong> additionalProperties </strong> `object`
+JSON object descriptor encloses A set of `key:value` pairs representing additional properties for this deal.This can be useful for storing additional information in a structured format. 
 
-A set of `key:value` pairs representing additional properties for this deal. Enclosed data body must be in JSON format.
+<strong> taxData </strong> `object`
 
-  <strong> taxData </strong> `object`
+JSON object descriptor encloses A set of `key:value` pairs representing tax-related information.
 
-A set of `key:value` pairs representing tax related information.
+<strong> importedSource </strong> `string`
 
-  <strong> importedSource </strong> `string`
+<strong> importedDate</strong> `date-time ┃ null`
 
-Use case undefined.
+<strong> estimatedCloseCount </strong> `number`
 
-  <strong> importedDate</strong> `date-time ┃ null`
-
-Use case undefined.
-
-  <strong> estimatedCloseCount </strong> `number`
-
-The total count of closed investors for a deal by the `organizer`
+The total number of expected closes on this deal.
+> A close can represent the close of the entire deal or just a subset of investments (i.e. a tranche).
