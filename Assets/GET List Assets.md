@@ -1,9 +1,8 @@
-
 Retrieves the list of assets for the current user. This endpoint returns data based on the authorized access level of the current user.
 
 # Attributes
 
-* <strong>data</strong> `[object]`
+<strong>data</strong> `[object]`
 
 JSON array object descriptor that encloses the list of assets served from the database. Each array index consists of a disparate asset object which contains all the details of that asset.
 

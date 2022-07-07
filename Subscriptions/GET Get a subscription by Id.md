@@ -40,12 +40,12 @@ Constraints `Min 0┃Max 6000000`.
 
 <strong>ownershipPercentageAtClose<strong> `number`
 
-Ownership Percentage At the time of Close.Constraints `Min 0.`
+Ownership Percentage At the time of Close.Constraints Min 0.
 > A close can represent the close of the entire deal or just a subset of investments (i.e. a tranche).
 
 <strong>ownershipPercentageAtDistribution<strong> `number`
 
-Ownership Percentage At the time of Distribution.Constraints `Min 0.`
+Ownership Percentage At the time of Distribution.Constraints Min 0.
 > `Distribution` means the transfer of money or property by the Fund/Deal to one or more Members with respect
 to their Interests, without separate consideration
 
@@ -178,22 +178,18 @@ Object descriptor that encloses the  information for management fee deduction.
   * <strong>type<strong> `string` </br> Type of management fee.
   * <strong>feesPaymentMethod<strong> `string` </br> Management fees payment method.
   * <strong>isRecurring<strong> `boolean` </br> 
-
-
-* <strong>organizerCarryPercentage<strong> `object`</br> 
+* <strong>organizerCarryPercentage<strong> `object` </br>
   JSON object descriptor that encloses the organizer Carry Percentage related information.
-
   > Carry Percentage means the rate of return percentage above the initial investment after one year that needs to be paid to a deal **organizer**. It is in the deal **organizer's** discretion as to whether the Carry Percentage will be lower, and such determination may be made up until the date of the Initial Closing.
-
-  * <strong>type<strong>: `enum` </br> 
+  * <strong>type<strong>: `enum` </br>
 Type of Organizer Carry percentage. Predefined `enum` values are  `percent┃flat`.
-  * <strong>amount<strong>: `number` </br> 
+  * <strong>amount<strong>: `number` </br>
 The amount of Organizer Carry percentage. Constraints `multiple of 0.01`
-  * <strong>tiers<strong>: `[object]` </br> 
+  * <strong>tiers<strong>: `[object]` </br>
 JSON _array_ object descriptor that encloses classification tier of Organizer carry percentage.
-    * <strong>breakpoint<strong> `number` </br> 
+    * <strong>breakpoint<strong> `number` </br>
 Carry Percentage Breakpoint.
-    * <strong>amount<strong> `number` </br> 
+    * <strong>amount<strong> `number` </br>
 Carry Percentage Amount. Constraints `Min 0┃Max 100┃ multiple of 0.001`
 
 

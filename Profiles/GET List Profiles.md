@@ -4,7 +4,7 @@ Retrieves the list of profiles for the current user (API end user). This endpoin
 
 <strong> id</strong> `string`
 
-A unique identifier used to locate a certain user's profile.
+A unique identifier is used to locate a certain user's profile.
 
 <strong> tenantId</strong> `string`
 

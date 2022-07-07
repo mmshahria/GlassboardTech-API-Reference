@@ -181,7 +181,7 @@ Object descriptor that encloses the  information for management fee deduction.
   * <strong>type<strong> `string` </br> Type of management fee.
   * <strong>feesPaymentMethod<strong> `string` </br> Management fees payment method.
   * <strong>isRecurring<strong> `boolean` </br> 
-* <strong>organizerCarryPercentage<strong> `object`
+* <strong>organizerCarryPercentage<strong> `object` </br>
   JSON object descriptor that encloses the organizer Carry Percentage related information.
   > Carry Percentage means the rate of return percentage above the initial investment after one year that needs to be paid to a deal **organizer**. It is in the deal **organizer's** discretion as to whether the Carry Percentage will be lower, and such determination may be made up until the date of the Initial Closing.
   * <strong>type<strong>: `enum` </br>
@@ -215,7 +215,7 @@ Has the value _true_, if it's an entity profile and if the company has a total-d
 
 <strong>isAffiliate<strong> `boolean`
 
-Has the value _true_ if the subscription has affiliates, or the value _false_ if it's not.
+Has the value _true_ if the subscription has an affiliate, or the value _false_ if it's not.
 
 > Affiliate means any person, directly or indirectly, through one or more intermediaries, that controls, is controlled by, or is under common control with another person.
 
