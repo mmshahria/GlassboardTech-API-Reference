@@ -1,8 +1,7 @@
 
-Creates a subscription/investemnt for a specific deal/fund if one doesn't already exist.Supply the `key:value` pair that is necessary for describing a subscription/investemnt. Data in the request body should follow the JSON data formatting.
+Creates a subscription/investment for a specific deal/fund if one doesn't already exist. Supply the `key:value` pair that is necessary for describing a subscription/investment. Data in the request body should follow the JSON data formatting.
 
->Subscription refers to the process of investor/subscriber signing up and committing to invest into a deal/fund before the actual closing of the purchase.
-
+>Subscription refers to the process of investor/subscriber signing up and committing to invest in a deal/fund before closing.
 
 # Parameters
 

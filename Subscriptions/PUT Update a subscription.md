@@ -1,4 +1,4 @@
-Update existing subscription records to the current user's (API end user) data source using the input parameters `key:value` pairs that are supplied in the request body. Supply the unique path parameter `subscriptionId` in the canonical path to execute an update operation to a specific subscription resource.
+Update existing subscription records to the current user's (API end-user) data source using the input parameters `key:value` pairs that are supplied in the request body. Supply the unique path parameter `subscriptionId` in the canonical path to execute an update operation to a specific subscription resource.
 
 # Parameters
 
