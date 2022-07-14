@@ -149,7 +149,7 @@ A list of URLs  or file paths referencing the files attached to this deal by an 
 
 A list of URLs or file paths referencing the files attached to this deal by an _organizer_. Values are returned as an _array_ list.
 
-  <strong> portfolioCompanyContact `object` </strong>
+<strong> portfolioCompanyContact </strong> `object` 
 
 Contact details of the portfolio company. Can be useful to store additional contact details of a portfolio company as a set of `key:value` pairs.
 

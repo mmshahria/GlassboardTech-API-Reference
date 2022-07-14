@@ -1,0 +1,1 @@
+Cancels a subscriber's subscription from a deal/fund. Supply the unique path parameter `subscriptionId` in the canonical path to execute the cancel operation.

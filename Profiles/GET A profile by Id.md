@@ -40,9 +40,7 @@ Preferred display name specified by the authorized profile owner, if any.
 
 <strong> typeOfEntity</strong> `enum`
 
-_Data-type_ `enum` 
-
-Consists of predefined legal business entity type `LIMITED_LIABILITY_COMPANY┃LIMITED_PARTNERSHIP┃C_CORPORATION┃S_CORPORATION┃GENERAL_PARTNERSHIP┃501_C_NONPROFIT┃FOREIGN_ENTITY┃INDIVIDUAL┃CORPORATION`. 
+_Data-type_ `enum` Consists of predefined legal business entity type `LIMITED_LIABILITY_COMPANY┃LIMITED_PARTNERSHIP┃C_CORPORATION┃S_CORPORATION┃GENERAL_PARTNERSHIP┃501_C_NONPROFIT┃FOREIGN_ENTITY┃INDIVIDUAL┃CORPORATION`. 
 
 The variable must be equal to one of the values that have been predefined for it.
 
