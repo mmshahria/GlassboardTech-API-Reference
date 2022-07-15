@@ -203,4 +203,4 @@ How Will Be Business Managed?
 
 How will the business be managed (can have 1-many owners/managers).
  
- Allowed `Solely by the owner(s) (Member-managed)┃Some, but not all, owners (Manager-managed)┃By the owner(s) and other managers (Manager-managed)┃Solely by the manager(s) (Manager-Managed)`.
+Allowed `Solely by the owner(s) (Member-managed)┃Some, but not all, owners (Manager-managed)┃By the owner(s) and other managers (Manager-managed)┃Solely by the manager(s) (Manager-Managed)`.
