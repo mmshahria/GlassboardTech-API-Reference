@@ -246,7 +246,7 @@ JSON object descriptor that encloses brokerage account details associated with t
 
   * <strong> routingNumber</strong> `string` </br> Routing number of a specified bank account.Allowed pattern `[012346789][0-9]$`
   * <strong> bankName</strong> `string` </br> Name of a specified bank.
-  * <strong> originatorName</strong> `string` </br> Name of the originator (e.g. name of the company or association).</br> 
+  * <strong> originatorName</strong> `string` </br> Name of the originator (e.g. name of the company or association). 
   > The originator is the company that receives the Direct Debit payments.
   * <strong> accountNumber</strong> `string` </br> Account number of a specified bank account.
 
