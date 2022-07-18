@@ -221,11 +221,7 @@ The current status of the tax for this deal.Allowed `enum` values are `TAX DATA 
 
 <strong> importedSource </strong> `string`
 
-Use case undefined.
-
 <strong> importedDate</strong> `date-time ┃ null`
-
-Use case undefined.
 
 <strong> estimatedCloseCount </strong> `number`
 

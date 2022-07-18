@@ -286,3 +286,4 @@ JSON object descriptor for additional properties.
   * <strong> jurisdiction</strong> `string`
   * <strong> fundDocumentTemplateId</strong> `string` </br>	The Default Fund Document Template ID to use for the Deal.
   * <strong> passportOrId</strong> `string` 
+  * <strong> isDisregarded<strong> `boolean`
