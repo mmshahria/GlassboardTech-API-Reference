@@ -1,0 +1,1 @@
+Create a signing document for a specific subscription,of the document type that you specify.Supply the unique path parameters `subscriptionId` and `documentType` in the correct canonical path to generate the signing document for the specified subscription.
