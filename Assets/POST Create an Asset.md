@@ -244,7 +244,7 @@ Describes the date & time at which the asset was deleted. Data formatted as `197
 
 Has the value _true_ if the asset is in the deleted status or the value _false_ if it's not in the deleted status.
 
-<strong>assetTypeId<strong> `string`
+<strong>assetTypeId<strong> `string` Unique asset type identification.
 
 <strong>additionalProperties</strong> `object`
 

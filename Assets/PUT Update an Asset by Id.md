@@ -4,7 +4,7 @@ Update existing asset records to the current user's data source based on the inp
 
 <strong> name* </strong> `string` 
 
-The Name of the Asset.
+The Name of the Asset.A valid value must be 2 to 1024 characters.
 
 <strong>description</strong> `string` <br>
 
@@ -20,7 +20,7 @@ A unique identifier used for API authentication and authorization.
 
 <strong>dealId*</strong> `string`
 
-A unique identifier of a deal. It references the interrelation between asset and deal.
+A unique identifier of a deal. It references the interrelation between a asset and a deal.
 
 <strong>type*</strong> `enum`
 
@@ -31,15 +31,17 @@ Type of the asset. An asset can take one of many forms, such as shares of common
 Classification tier of an asset.
 
 <strong>unitCount</strong> `number`
-
+Unit count for this asset.Default value 1.
 
 
 <strong>allocationAmount<strong> `number`
 
-Constraints `Min 0`
+Allocation amount for this asset. Default value 0.
+> Allocation refers to the amount a given Investor is able to invest in a given deal.
 
 <strong>sector</strong> `string`
 
+Sector associated with this asset.
 
 <strong>size<strong> `string` <br>
 
@@ -69,11 +71,11 @@ The amount of Fractional Ownership for the Asset. Constraints `Min 0┃ multiple
 
 <strong>funding</strong> `object` 
 
-JSON object descriptor that encloses Funding object.
+JSON object descriptor that encloses the Funding object associated with this asset.
 
   * <strong>round<strong> `number` <br> The funding round refers to the rounds of funding that startups go through to raise capital. The number representation of  pre-seed, seed, series A, B, C, etc.
 
-  * <strong>targetRaiseAmount</strong> `number` <br>The target raise amount refers to the estimated amount willing to raise for the deal. Constraints: multiple of 0.01
+  * <strong>targetRaiseAmount</strong> `number` <br>The target raise amount refers to the estimated amount willing to raise for the deal. Constraints `multiple of 0.01`.
  
   * <strong>securityType</strong> `string` The type of the security.
 
@@ -82,13 +84,16 @@ JSON object descriptor that encloses Funding object.
   * <strong>noOfShare</strong> `number` <br> 
 
   * <strong>sharePrice</strong> `number` <br>
-  Constraints multiple of 0.01.
+  Constraints `multiple of 0.01`.
 
 <strong>revenueHistory</strong> `[string]`
+
+Array Object descriptor that encloses the Historical Revenue associated with this asset.
 
 
 <strong>costsHistory</strong> `[string]`
 
+Array Object descriptor that encloses the Historical costs associated with this asset.
 
 <strong>pitchDoc</strong> `string`
 
@@ -123,9 +128,25 @@ JSON object descriptor that encloses contact details associated with the asset.
 
   * <strong>phone</strong> `string` <br> Phone number.
 
-<strong>id</strong> `string`
+<strong>ownerId*</strong> `string`
 
-A unique identifier of the asset.
+A unique identifier of the owner.
+
+<strong>tenantId*</strong> `string`
+
+A unique identifier used for API authentication and authorization.
+
+<strong>dealId*</strong> `string`
+
+A unique identifier of a deal. It references the interrelation between a asset and a deal.
+
+<strong>type*</strong> `enum`
+
+Type of the asset. An asset can take one of many forms, such as shares of common stock in a company, real estate, cryptocurrency, or even fractional ownership in a private jet. Predefined `enum` values are `COMPANY┃REAL_ESTATE┃CRYPTOCURRENCY┃ARTWORK`.
+
+<strong>subType</strong> `string`
+
+Classification tier of an asset.
 
 <strong>primaryContact</strong> `object`
 
@@ -144,11 +165,15 @@ JSON array object descriptor that encloses details object reference associated w
 JSON array object descriptor that encloses properties object reference associated with the asset. Each array index consists of a disparate object for specific property details.
 
 <strong>videoUrl</strong> `string` <br>
-The video storage path url associated the asset. Allowed `string` character Pattern `[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?`
+The video storage path url associated with the asset. Allowed `string` character Pattern `[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?`
 
 <strong>artist</strong> `object`
 
 JSON object descriptor that encloses details of artist if the asset somehow relates to art that  include graphics, 3D models, sound effects, music, vehicles, head-up displays (HUDs), icons, etc.
+
+* <strong>name<strong> `string` <br> Full name of the artist.
+* <strong>location<strong> `string` <br> Location of the artist.
+* <strong>images<strong> `[string]` <br>JSON array object descriptor that encloses the images. Each array index consists of storage `string` path to the image file.
 
 <strong>team</strong> `[object]`
 
@@ -172,6 +197,9 @@ JSON array object descriptor that encloses asset related documents storage `stri
 <strong>assetDocuments<strong> `object` 
 
 JSON array object descriptor that encloses details of asset related documents.
+
+* <strong>founderDocuments<strong> `[string]` </br> Array Object descriptor that encloses the list of founder legal documents or files associated with the asset.
+
 
 <strong>images</strong> `[string]`
 
@@ -211,6 +239,8 @@ Describes the date & time at which the asset was deleted. Data formatted as `197
 <strong>isDeleted</strong> `boolean` 
 
 Has the value _true_ if the asset is in the deleted status or the value _false_ if it's not in the deleted status.
+
+<strong>assetTypeId<strong> `string` Unique asset type identification.
 
 <strong>additionalProperties</strong> `object`
 
