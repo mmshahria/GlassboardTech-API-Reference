@@ -31,7 +31,7 @@ Category of subscriber.`type` applies to a person or an organization. Predefined
 
 <strong>status*<strong> `enum`
 
-The subscription status of the subscriber._Data-type_ `enum` consists of predefined status values `INVITED┃PENDING┃COMMITTED┃COMPLETED┃CLOSED┃CANCELLED┃TRANSFERRED┃REFUNDED┃FUNDING SENT┃FUNDS_IN_TRANSIT-MANUAL`.The variable must be equal to one of the values that have been predefined for it while updating the subscription _status_.
+Accreditation Status for this subscription._Data-type_ `enum` consists of predefined status values `INVITED┃PENDING┃COMMITTED┃COMPLETED┃CLOSED┃CANCELLED┃TRANSFERRED┃REFUNDED┃FUNDING SENT┃FUNDS_IN_TRANSIT-MANUAL`.The variable must be equal to one of the values that have been predefined for it while updating the subscription _status_.
 
 <strong>amount<strong> `number`
 
@@ -39,16 +39,16 @@ The amount Investor/subscriber intends to invest in a deal.Constraints `Min 0`.
 
 <strong>reconciledAmount<strong> `number`
 
-Constraints `Min 0┃Max 6000000`.
+Amount actually received for this subscription. Constraints `Min 0┃Max 6000000`.
 
 <strong>ownershipPercentageAtClose<strong> `number`
 
-Ownership Percentage At the time of Close.Constraints Min 0.
+Ownership Percentage At the time of Close.Constraints `Min 0`.
 > A close can represent the close of the entire deal or just a subset of investments (i.e. a tranche).
 
 <strong>ownershipPercentageAtDistribution<strong> `number`
 
-Ownership Percentage At the time of Distribution.Constraints Min 0.
+Ownership Percentage At the time of Distribution.Constraints `Min 0`.
 > `Distribution` means the transfer of money or property by the Fund/Deal to one or more Members with respect
 to their Interests, without separate consideration
 
@@ -113,18 +113,18 @@ JSON object descriptor that encloses the details of account transaction for this
 
 JSON object descriptor that encloses the details of legal documents for this subscription.
 
-* <strong>capitalAccountStatement<strong> `string` </br> 
-* <strong>historicalCapitalAccountStatements<strong> `string` </br> 
-* <strong>signerOneOASigPage<strong> `string` </br> 
-* <strong>signerTwoOASigPage<strong> `string` </br> 
-* <strong>investorSASigPage<strong> `string` </br> 
-* <strong>signerOneTaxDoc<strong> `string` </br> 
-* <strong>signerTwoTaxDoc<strong> `string` </br> 
-* <strong>mergedSignerOneOA<strong> `string` </br> 
-* <strong>mergedSignerTwoOA<strong> `string` </br> 
-* <strong>mergedInvestorSA<strong> `string` </br> 
-* <strong>mergedCounterSignedOA<strong> `string` </br> 
-* <strong>mergedCounterSignedSA<strong> `string` </br> 
+* <strong>capitalAccountStatement<strong> `string` </br> Subscription Document.
+* <strong>historicalCapitalAccountStatements<strong> `string` </br> Subscription Document.
+* <strong>signerOneOASigPage<strong> `string` </br> Subscription Document.
+* <strong>signerTwoOASigPage<strong> `string` </br> Subscription Document.
+* <strong>investorSASigPage<strong> `string` </br> Subscription Document.
+* <strong>signerOneTaxDoc<strong> `string` </br> Subscription Document.
+* <strong>signerTwoTaxDoc<strong> `string` </br> Subscription Document.
+* <strong>mergedSignerOneOA<strong> `string` </br> Subscription Document.
+* <strong>mergedSignerTwoOA<strong> `string` </br> Subscription Document.
+* <strong>mergedInvestorSA<strong> `string` </br> Subscription Document.
+* <strong>mergedCounterSignedOA<strong> `string` </br> Subscription Document.
+* <strong>mergedCounterSignedSA<strong> `string` </br> Subscription Document.
 * <strong>taxes<strong> `[object]` </br> 
 JSON object descriptor that encloses tax-related information. Each _array_ index consists of `year` and a unique file identifier of taxes.
   * <strong>year<strong> `number` </br> Subscription's taxable year.
@@ -170,17 +170,17 @@ A unique identifier assigned by the system while creating a user profile as an i
 
 <strong>sideLetter<strong> `object`
 
-JSON object descriptor that encloses the side letter related information.
+JSON object descriptor that encloses the side letter properties.
 
 * <strong>managementFee<strong> `object` </br>
 Object descriptor that encloses the  information for management fee deduction.
   * <strong>amount<strong> `number` </br> The amount of the management fee.
-  * <strong>duration<strong> `number` </br> 
-  * <strong>frequency<strong> `string` </br>
+  * <strong>duration<strong> `number` </br> Duration of Management Fee.
+  * <strong>frequency<strong> `string` </br> Periodicity of Management Fee.
   * <strong>percent<strong> `number` </br>
   * <strong>type<strong> `string` </br> Type of management fee.
   * <strong>feesPaymentMethod<strong> `string` </br> Management fees payment method.
-  * <strong>isRecurring<strong> `boolean` </br> 
+  * <strong>isRecurring<strong> `boolean` </br> Checks whether the Management Fee is part of a recurring series.
 * <strong>organizerCarryPercentage<strong> `object` </br>
   JSON object descriptor that encloses the organizer Carry Percentage related information.
   > Carry Percentage means the rate of return percentage above the initial investment after one year that needs to be paid to a deal **organizer**. It is in the deal **organizer's** discretion as to whether the Carry Percentage will be lower, and such determination may be made up until the date of the Initial Closing.

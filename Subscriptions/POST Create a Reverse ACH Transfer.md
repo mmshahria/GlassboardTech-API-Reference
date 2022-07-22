@@ -10,10 +10,7 @@ Supply the unique path parameters `subscriptionId` in the correct canonical path
 
 The following properties must be supplied if the Subscription was funded with an off-platform method, or with multiple incoming ACH transactions:
 
-`routing` </br>
-`account` </br>
-`typeOfAccount` </br>
-`nameOnAccount` </br>
+`routing`,`account`,`typeOfAccount`,`nameOnAccount`.
 
 
 The `ownerId` of the Deal or Subscription must match the `userId` of the current API user.
