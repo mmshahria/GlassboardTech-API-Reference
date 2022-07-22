@@ -1,0 +1,1 @@
+Statements in PDF format are created at request time, i.e. they are not generated during some previous event and stored. The function generates a PDF for a capital account statement for the specified `subscriptionId`. It can be created anytime after the subscription has been created. If the subscription is not part of a close, the values on this statement are estimates.

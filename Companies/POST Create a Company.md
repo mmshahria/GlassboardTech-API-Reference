@@ -130,7 +130,7 @@ Type of Business/Purpose (Finance & Insurance).
 <strong>typeOfBusinessActivity<strong> `string`
 Type of Business Activity (Finance).
 
-<strong>individualOrBusiness<strong>: `enum`
+<strong>individualOrBusiness<strong> `enum`
 Business/Individual. Allowed `enum` values are `Individual┃Business`.
 
 <strong>feesAccount<strong> `object`
