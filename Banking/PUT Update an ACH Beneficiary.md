@@ -26,7 +26,7 @@ Account number for a linked bank account for this beneficiary.
 
 <strong>routingNumber*<strong> `string`
 
-The routing transit number for the bank account.
+The routing transit number for the bank account.The routing transit number for a linked bank account for this ACH transaction.
 
 <strong>accountType*<strong> `string`
 

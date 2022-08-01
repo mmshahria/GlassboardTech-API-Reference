@@ -12,73 +12,56 @@ Initiates a request to create an  Outgoing Wire Transaction. Supply the unique `
 
 The Account Holder's name on the receiving account. Constraints `Min 1 chars`.
 
-<strong>addressOnAccount*<strong> {
+<strong>addressOnAccount*<strong>
 
+JSON object descriptor that encloses the Account Holder's address on receiving Account.
 
-<strong>address1*<strong> `string`
-
+* <strong>address1*<strong> `string`<br>
 Street Name Line 1.Constraints `2 to 1024 chars`.
-
-<strong>address2<strong> `string`
-
+* <strong>address2<strong> `string`<br>
 Street Name Line 2. Constraints `Max 1024 chars`.
+* <strong>city*<strong> `string`<br>
+The City name of Address. Constraints `2 to 1024 chars`.
+* <strong>region*<strong> `string`<br>
+The Region or State of Address.Constraints `2 to 1024 chars`.
+* <strong>postalCode*<strong> `string`<br>
+ostal (or ZIP) Code of Address.Constraints `2 to 1024 chars`.
+* <strong>country*<strong> `enum`<br>
+The country in which the bank account is located. ISO 3166-1 Full Country name in ISO-639-1 (EN) Format.
 
-<strong>city*<strong> `string`
+<strong>bankAddress*<strong> 
 
-City of Address. Constraints `2 to 1024 chars`.
-<strong>region*<strong> `string`
+JSON object descriptor that encloses the bank address details.
 
-Region or State of Address.Constraints `2 to 1024 chars`.
-
-<strong>postalCode*<strong> `string`
-
-Postal Code: Postal (or ZIP) Code of Address.Constraints `2 to 1024 chars`
-
-<strong>country*<strong> `enum`
-
-Country: ISO 3166-1 Full Country name in ISO-639-1 (EN) Format
-
-<strong>bankAddress*<strong> {
-
-
-<strong>address1*<strong> `string`
-
-Street Name Line 1.Constraints `2 to 1024 chars`
-
-<strong>address2<strong> `string`
-
+* <strong>address1*<strong> `string` <br>
+Street Name Line 1.Constraints `2 to 1024 chars`.
+* <strong>address2<strong> `string` <br>
 Street Name Line 2. Constraints `Max 1024 chars`.
-
-<strong>city*<strong> `string`
-
-City of Address.Constraints `2 to 1024 chars`.
-
-<strong>region*<strong> `string`
-
-Region or State of Address.Constraints `2 to 1024 chars`
-
-<strong>postalCode*<strong> `string`
-
+* <strong>city*<strong> `string`<br>
+The City name of Address.Constraints `2 to 1024 chars`.
+* <strong>region*<strong> `string`<br>
+The Region or State of Address.Constraints `2 to 1024 chars`.
+* <strong>postalCode*<strong> `string`<br>
 Postal (or ZIP) Code of Address.Constraints `2 to 1024 chars`.
-
-<strong>country*<strong> `enum`
-
-ISO 3166-1 Full Country name in ISO-639-1 (EN) Format
+* <strong>country*<strong> `enum`<br>
+The country in which the bank is located.ISO 3166-1 Full Country name in ISO-639-1 (EN) Format.
 
 <strong>bankName*<strong> `string`
 
-The Name of the receiving Bank. Constraints `Min 3 chars`.
+The Name of the receiving Bank for this outgoiong wire transaction. Constraints `Min 3 chars`.
+
 <strong>account*<strong> `string`
 
 The account number of the receiving account.Constraints `Min 1 chars`.
 
 <strong>routing*<strong> `string`
 
-The routing number of the receiving account. Constraints `Min 1 chars`.
+The routing transit number of the receiving account for this outgoiong wire transaction. Constraints `Min 1 chars`.
+
 <strong>instructions<strong> `string`
 
-Additional instructions for the Wire. Limited to 140 characters. Constraints `Max 140 chars`
+Additional instructions for the Wire transaction. Limited to 140 characters. Constraints `Max 140 chars`.
 
 <strong>amount*<strong> `number`
 
-
+Transaction amount that is moving out of the bank account.

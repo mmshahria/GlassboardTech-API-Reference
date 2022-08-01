@@ -8,7 +8,7 @@ Transaction amount that is moving in or out of the bank account.Constraints `Min
 
 <strong>routing*<strong> `string`
 
-The routing transit number for a linked bank account.
+The routing transit number for a linked bank account for this ACH transaction.
 
 <strong>account*<strong> `string`
 
@@ -33,4 +33,4 @@ Specifies whether the recipient account is to be credited or debited.Allowed enu
 
 <strong>nameOnAccount<strong> `string`
 
-The full name of the person or business on bank account.
+The full name of the person or business on the bank account.
