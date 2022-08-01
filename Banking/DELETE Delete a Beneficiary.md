@@ -1,0 +1,1 @@
+Delete an existing Beneficiary record from the current user's (API end-user) data source. Supply the unique `beneficiaryId` in the path parameter to execute the delete operation to a specific Beneficiary for the current user (API end-user).

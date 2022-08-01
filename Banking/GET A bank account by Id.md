@@ -1,26 +1,24 @@
-
-Returns the details of a linked bank account for a valid identifier.In the request supply the unique `accountId` and this endpoint will return the corresponding bank account details.
+Returns the details of a linked bank account for a valid identifier.Supply the unique `accountId` in the path parameter and this endpoint will return the corresponding bank account details.
 
 # Attributes
 
 <strong> id </strong> `string`
 
-A unique identifier of the account that the bank account is associated with.
+The internal identifier to locate the bank account.
 
 <strong> ownerId </strong> `string`
 
 A unique identifier of the owner that the bank account is associated with.
 
-
 <strong> status </strong> `string`
 
-Describes the bank accounts’s current status. 
-
-For bank accounts, possible values are `DRAFT┃IN-PROVISIONING┃OPEN┃IN CLOSING┃CLOSED`.
+Describes the bank accounts’ current status. Allowed values are `DRAFT┃IN-PROVISIONING┃OPEN┃IN CLOSING┃CLOSED`.
 
 <strong> tenantId </strong> `string`
 
-A unique identifier used for API authentication and authorization. Can be useful for this API's end users.
+A unique identifier used for API authentication and authorization.
+
+>Tenant refers to the end user of this API and It's required for identity and access management.
 
 <strong> createdAt </strong> `date-time`
 
@@ -32,27 +30,27 @@ Describes the date & time at which the bank account was last updated. Data forma
 
 <strong> accountNumber </strong> `string`
 
-An account number is a unique code assigned to the account owner for identifying a specific bank account holder.
+Bank account number associated with this bank account.
 
 <strong> routingNumber </strong>r `string`
 
-The routing transit number for the bank account.
+The routing transit number associated with this bank account.
 
 <strong> accountName </strong> `string`
 
-The name of the person or business that owns the bank account.
+The name of the natural person or business that owns the bank account.
 
 <strong> bankName </strong> `string`
 
-Name of the bank associated with the <strong>routingNumber</strong>
+Name of the bank associated with the <strong>routingNumber</strong> for this bank account.
 
 <strong> bankAddress </strong> `string`
 
-Returns the bankAddress of the specified bank.
+The physical address of the bank. 
 
 <strong>bankContact </storng> `object` 
 
-Returns the bankContact details. Data returned as JSON object.
+JSON object descriptor that encloses the bank contact details.
 
 *   <strong> name </strong> `string`</br> The name of the person or business that owns the bank account.
 *   <strong> phone </strong> `string`</br> The phone number of the person or business that owns the bank account.
@@ -64,11 +62,11 @@ SWIFT code for the specified bank account. A SWIFT code identifies the country, 
 
 <strong> tenantIdForFees </strong> `string`
 
-Use case Undefined.
+
 
 <strong>tenantIdForBlueSky </strong> `string`
 
-Use case Undefined.
+
 
 `any-key`: `any value`
 

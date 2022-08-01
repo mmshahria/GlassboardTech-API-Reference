@@ -250,7 +250,6 @@ Has the value _true_ if the asset is in the deleted status or the value _false_ 
 
 JSON object descriptor that encloses additional properties related to the asset. 
 
-
 <strong>page<strong> `number`
 The total number of page. This can be specified as a query string parameter.
 

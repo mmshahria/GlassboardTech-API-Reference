@@ -17,11 +17,11 @@ A unique identifier used for API authentication and authorization.
 
 <strong>dealId<strong> `string`
 
-A unique identifier of a deal. It references the interrelation between a subscription and a deal.
+A unique internal identifier of a particular deal for this subscription. It references the interrelation between a subscription and a deal.
 
 <strong>name*<strong> `string`
 
-The Name of the subscriber of this subscriptioin.Constraints 2 to 1024 chars.
+The Name of the particular deal for this subscription.Constraints `2 to 1024 chars`.
 
 <strong>email*<strong> `string`
 

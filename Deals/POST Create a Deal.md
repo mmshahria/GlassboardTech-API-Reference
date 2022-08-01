@@ -1,5 +1,5 @@
 To raise capital, a user needs to create a `deal` by supplying related data that is necessary for describing a `deal` as an opportunity to the investors. 
-Supp
+
 
 > A deal is a fundamental object that represents an investment opportunity into which user make an investment. The objective of forming a deal is to raise capital for investment in a private asset, such as a starting business, a real estate project, or other assets such as art or films.
 

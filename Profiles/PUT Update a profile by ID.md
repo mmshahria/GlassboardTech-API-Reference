@@ -219,7 +219,9 @@ External Banking User.
   * <strong> id </strong> `string`
   * <strong> accounts </strong> `[object]` </br> An array object descriptor that encloses the list of accounts for banking user associated with this profile.
 
-<strong> purchaserStatus</strong> `[number]` An _array_ list of numbers.
+<strong> purchaserStatus</strong> `[number]` 
+
+Purchaser Status representation for Qualified purchaser Document Generation. Numbers in index correspond to checkboxes in documents, in numerical order.
 
 <strong> createdAt</strong> `date-time` 
 
@@ -260,4 +262,4 @@ JSON object descriptor for additional properties.
   * <strong> jurisdiction</strong> `string`
   * <strong> fundDocumentTemplateId</strong> `string` </br>	The Default Fund Document Template ID to use for the Deal.
   * <strong> passportOrId</strong> `string` 
-  * <strong> isDisregarded<strong> `boolean`
+  * <strong> isDisregarded<strong> `boolean` </br> Has the value true if an entity profile is disregarded or a trust profile is under SSN, Otherwise, the value is false.

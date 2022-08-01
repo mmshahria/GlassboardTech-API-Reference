@@ -89,7 +89,9 @@ The unique owner identifier of the company.
 
 <strong>tenantId<strong> `string`
 
-A unique identifier required for authorization.
+A unique identifier used for API authentication and authorization.
+
+>Tenant refers to the end user of this API and It's required for identity and access management.
 
 <strong>seriesPrefix<strong> `string`
 
@@ -130,7 +132,7 @@ Type of Business/Purpose (Finance & Insurance).
 <strong>typeOfBusinessActivity<strong> `string`
 Type of Business Activity (Finance).
 
-<strong>individualOrBusiness<strong>: `enum`
+<strong>individualOrBusiness<strong> `enum`
 Business/Individual. Allowed `enum` values are `Individual┃Business`.
 
 <strong>feesAccount<strong> `object`

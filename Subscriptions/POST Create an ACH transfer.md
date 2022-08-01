@@ -5,4 +5,5 @@ Use the Create an ACH Transfer endpoint to place the transfer into the queue for
 # Parameter
 
 <strong>scheduledForDate<strong> `date`
+
 Scheduled Transaction date for this ACH transfer.

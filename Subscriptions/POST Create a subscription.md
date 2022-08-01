@@ -1,4 +1,3 @@
-
 Creates a subscription/investment for a specific deal/fund if one doesn't already exist. Supply the `key:value` pair that is necessary for describing a subscription/investment. Data in the request body should follow the JSON data formatting.
 
 >Subscription refers to the process of investor/subscriber signing up and committing to invest in a deal/fund before closing.
@@ -12,11 +11,11 @@ A unique identifier used for API authentication and authorization.
 
 <strong>dealId<strong> `string`
 
-A unique identifier of a deal. It references the interrelation between a subscription and a deal.
+A unique internal identifier of a particular deal for this subscription. It references the interrelation between a subscription and a deal.
 
 <strong>name*<strong> `string`
 
-The Name of the subscriber of this subscriptioin.Constraints 2 to 1024 chars.
+The Name of the particular deal for this subscription.Constraints `2 to 1024 chars`.
 
 <strong>email*<strong> `string`
 
@@ -142,7 +141,7 @@ Timestamp for the creation of the subscription.
 
 <strong>updatedAt<strong> `date-time`
 
-The date and time stamp when the subscirpiton information last modified.
+The date and time stamp when the subscription information was last modified.
 
 <strong>signature<strong> `string`
 
@@ -221,7 +220,7 @@ Has the value _true_ if the subscription has an affiliate, or the value _false_ 
 
 <strong>closeId<strong> `string`
 
-Unique close identifier.
+The Unique internal close identifier for this subscription.
 > A close can represent the close of the entire deal or just a subset of investments (i.e. a tranche).
 
 <strong>capitalCallApproveType<strong> `enum`
