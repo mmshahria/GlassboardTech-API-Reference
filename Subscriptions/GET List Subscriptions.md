@@ -59,23 +59,23 @@ to their Interests, without separate consideration
 
 <strong>transactionId<strong> `string`
 
-Unique transaction identifier generated from the electronic transfer of fund.
+Unique transaction identifier generated from the electronic transfer of fund for this subscription.
 
 <strong>transactionIds<strong> `[string]`
 
-JSON object descriptor that encloses array list of transaction's unique identifier if the subscription consists of disparate subscriber. Each _array_ index consists of a unique identifier of a subscriber.
+JSON object descriptor that encloses an array list of bank transaction's unique identifiers if the subscription consists of disparate subscribers. Each _array_ index consists of a disparate bank transaction identifier.
 
 <strong>bankTransactionIds<strong> `[string]`
 
-JSON object descriptor that encloses array list of bank transaction's unique identifiers if the subscription consists of disparate subscriber. Each _array_ index consists of a unique identifier of a subscriber.
+JSON object descriptor that encloses an array list of bank transaction's unique identifiers if the subscription consists of disparate subscribers. Each _array_ index consists of a disparate bank transaction identifier.
 
 <strong>reverseTransactionId<strong> `string`
 
-Unique reverse transaction identifier.
+Unique reverse transaction identifier for this subscription,if any.
 
 <strong>distributionTransactionIds<strong> `[string]`
 
-JSON object descriptor that encloses array list of distribution transaction's unique identifiers if the subscription consists of disparate subscriber. Each _array_ index consists of a unique identifier of a subscriber.
+JSON object descriptor that encloses an array list of distribution transaction's unique identifiers if the subscription consists of disparate subscribers. Each _array_ index consists of a distributed transaction identifier.
 
 <strong>isDocsSigned<strong> `boolean`
 
@@ -95,7 +95,7 @@ Unique subscription package identifier.
 
 <strong>signers<strong> `[objcet]`
 
-JSON object descriptor that encloses the details of signers for this subscription.
+JSON _array_ object descriptor that encloses the list of signers for this subscription.
 
 <strong>bankAccount<strong> `object`
 

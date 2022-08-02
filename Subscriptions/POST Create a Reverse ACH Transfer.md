@@ -24,7 +24,7 @@ The routing transit number associated with the bank account.
 
 <strong>account<strong> `string`
 
-Account number associated with the bank account. 
+Account number associated with the bank account for this reverse ACH transfer. 
 
 <strong>typeOfAccount<strong> `enum`
 
@@ -32,7 +32,7 @@ Type of the bank account. Allowed `enum` values are `CHECKING┃SAVINGS`.
 
 <strong>nameOnAccount<strong> `string`
 
-The name of the person or business associated with the bank account.
+The name of the person or business on the bank account.
 
 <strong>amount<strong> `number`
 

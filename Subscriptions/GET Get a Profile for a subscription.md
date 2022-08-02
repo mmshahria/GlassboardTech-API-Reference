@@ -169,7 +169,7 @@ JSON object descriptor that encloses the details of beneficial owner (Individual
 
 > Individuals or natural people who ultimately owns this profile.
 
-  * <strong> id</strong> `string` <br> A unique identifier.
+  * <strong> id</strong> `string` <br> A unique internal identifier.
   * <strong> ownerId</strong> `string` <br> A unique identifier of the owner for this beneficial owner. 
   * <strong> name</strong> `string` </br> Full name of the beneficial owner. 
   * <strong> type</strong> `string` </br> Type of the beneficial owner.

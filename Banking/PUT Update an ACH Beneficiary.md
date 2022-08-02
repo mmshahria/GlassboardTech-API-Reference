@@ -16,7 +16,7 @@ Phone number associated with the beneficiary.
 
 <strong>nameOnAccount*<strong> `string`
 
-The full name of the person or business associated with the bank account.
+The full name of the person or business on the bank account.
 
 <strong>accountNumber*<strong> `string`
 

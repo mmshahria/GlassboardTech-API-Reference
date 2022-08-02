@@ -1,4 +1,4 @@
-Retrieves an specified asset for a valid identifier. Supply the unique `assetId` and this endpoint will respond the corresponding asset details for the current user.
+Retrieves an specified asset for a valid identifier. Supply the unique `assetId` in the path parameter and this endpoint will respond the corresponding asset details for the current user.
 
 # Attributes
 
@@ -12,7 +12,7 @@ The Description of the Asset.
 
 <strong>ownerId*</strong> `string`
 
-A unique identifier of the owner.
+A unique internal identifier of the owner.
 
 <strong>tenantId*</strong> `string`
 

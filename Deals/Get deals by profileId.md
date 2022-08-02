@@ -1,5 +1,5 @@
 
-Retrieves the details of existing deals for a valid identifier. Supply the unique `profileId`, and this endpoint will return the corresponding deal details. Data returned as JSON _array_ object.
+Retrieves the details of existing deals for a valid identifier. Supply the unique `profileId` in the path parameter, and this endpoint will return the corresponding deal details. Data returned as JSON _array_ object.
 
 # Attributes
 
