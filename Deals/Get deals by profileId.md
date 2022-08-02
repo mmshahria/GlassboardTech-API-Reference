@@ -9,7 +9,7 @@ An array list of deals list. Here, the data attribute is used as a simple descri
 
 * <strong> profileId* </strong> `string`
 
-A unique identifier assigned by the system while creating a **organizer** profile as an individual or an entity.
+A unique identifier assigned by the system while creating a profile as an individual or an entity.
 
 
 * <strong> minInvestmentAmount* </strong> `number`
@@ -203,9 +203,9 @@ Describes the date & time at which the deal was deleted. Data formatted as `1970
 Has the value _true_ if a specified deal is deleted by the deal **organizer** or the value _false_ if the deal has other __status__.
 
 
-* <strong> additionalProperties </strong> `object` <br> A set of `key:value` pairs representing additional properties for this deal. Enclosed data body must be in JSON format.
+* <strong> additionalProperties </strong> `object` <br> JSON object descriptor encloses A set of `key:value` pairs representing additional properties for this deal.This can be useful for storing additional information in a structured format. 
 
-* <strong> taxData </strong> `object` <br> A set of `key:value` pairs representing tax related information.
+* <strong> taxData </strong> `object` <br> JSON object descriptor encloses A set of `key:value` pairs representing tax-related information.
     * <strong>taxStatus<strong> `enum` <br>
 The current status of the tax for this deal.Allowed `enum` values are `TAX DATA EXPORTED┃APPROVED BY TAX ANALYST┃TAXES BEING PROCESSED BY CCH┃WAITING ORGANIZER APPROVAL┃REJECTED BY ORGANIZER┃APPROVED BY ORGANIZER`.
     * <strong>uploaded1065File<strong> `string` <br> Uploaded Schedule K-1 (Form 1065) file path url. Path `string` of the 1065File.

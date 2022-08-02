@@ -7,7 +7,7 @@ Partially modify an existing deal resource  based on the input parameters `key:v
 
 <strong> profileId* </strong> `string`
 
-A unique identifier assigned by the system while creating a **organizer** profile as an individual or an entity.
+A unique identifier assigned by the system while creating a profile as an individual or an entity.
 
 <strong> minInvestmentAmount* </strong> `number`
 
@@ -201,11 +201,11 @@ Has the value _true_ if a specified deal is deleted by the deal **organizer** or
 
   <strong> additionalProperties </strong> `object`
 
-A set of `key:value` pairs representing additional properties for this deal. Enclosed data body must be in JSON format.
+JSON object descriptor encloses A set of `key:value` pairs representing additional properties for this deal.This can be useful for storing additional information in a structured format.
 
   <strong> taxData </strong> `object`
 
-A set of `key:value` pairs representing tax related information.
+JSON object descriptor encloses A set of `key:value` pairs representing tax-related information.
   * <strong>taxStatus<strong> `enum` <br>
 The current status of the tax for this deal.Allowed `enum` values are `TAX DATA EXPORTED┃APPROVED BY TAX ANALYST┃TAXES BEING PROCESSED BY CCH┃WAITING ORGANIZER APPROVAL┃REJECTED BY ORGANIZER┃APPROVED BY ORGANIZER`.
   * <strong>uploaded1065File<strong> `string` <br> Uploaded Schedule K-1 (Form 1065) file path url. Path `string` of the 1065File.

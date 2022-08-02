@@ -180,7 +180,6 @@ A valid email address of the contact person for the portfolio company. Constrain
 <strong> status* </strong> `enum`
 
 Describes the deal’s current status. 
-
 _Data-type_ `enum` consists of predefined status values `DRAFT┃IN-PROVISIONING┃OPEN┃IN CLOSING┃CLOSED.` The variable must be equal to one of the values that have been predefined for it while updating the deal _status_.
 
 
@@ -194,7 +193,7 @@ Describes the date & time at which the deal was last updated. Data formatted as 
 
   <strong> ownersDealUrl </strong> `string`
 
-Use case undefined.
+
 
  <strong> deletedAt </strong> `date-time`
 
@@ -205,18 +204,19 @@ Describes the date & time at which the deal was deleted. Data formatted as `1970
 
 Has the value _true_ if a specified deal is deleted by the deal **organizer** or the value _false_ if the deal has other __status__.
 
-  <strong> additionalProperties </strong> `object`
+<strong> additionalProperties </strong> `object`
 
-A set of `key:value` pairs representing additional properties for this deal. Enclosed data body must be in JSON format.
+JSON object descriptor that encloses a set of `key:value` pairs representing additional properties for this deal. The enclosed data body must be in JSON format.
 
 <strong> taxData </strong> `object`
 
-A set of `key:value` pairs representing tax related information.
+JSON object descriptor that encloses a set of `key:value` pairs representing tax related information.
+
 * <strong>taxStatus<strong> `enum` <br>
 The current status of the tax for this deal.Allowed `enum` values are `TAX DATA EXPORTED┃APPROVED BY TAX ANALYST┃TAXES BEING PROCESSED BY CCH┃WAITING ORGANIZER APPROVAL┃REJECTED BY ORGANIZER┃APPROVED BY ORGANIZER`.
 * <strong>uploaded1065File<strong> `string` <br> Uploaded Schedule K-1 (Form 1065) file path url. Path `string` of the 1065File.
 * <strong>taxDataExportedAt<strong> `date-time` <br> Describes the `date & time` at which the `taxData` was exported.
-* <strong>rejectionReasonByOrganizer<strong> `string` <br> 
+* <strong>rejectionReasonByOrganizer<strong> `string` <br> Organizer's rejection reason for this deal.
 
 
 <strong> importedSource </strong> `string`
