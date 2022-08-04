@@ -39,6 +39,10 @@ Carry Percentage Breakpoint.
        * <strong>amount<strong> `number` </br>
 Carry Percentage Amount. Constraints `Min 0┃Max 100┃ multiple of 0.001`.
 
+<strong> additionalCarryRecipients </strong> `[object]`
+
+JSON _array_ object descriptor that encloses the details of Additional carry recipients.
+
 * <strong> individual </strong> `object`</br> JSON object descriptor that encloses the details of an individual. Additional carry recipients can either be any individual entity or person.
     * <strong> id </strong> `string` </br> A unique identifier of the additional carry recipients.
     * <strong> ownerId </strong> `string` </br> A unique identifier of the owner.
