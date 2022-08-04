@@ -72,7 +72,7 @@ The email address associated with this profile. Pattern `^\S+@\S+$`
 
 JSON object descriptor that encloses tax related information for this profile.
 
-  * <strong> registrationType*</strong> `enum` </br> Tax registration type applies to a person or an organization. Predefined `enum` values are `ENTITY┃TRUST┃JOINT┃401K┃IRA┃INDIVIDUAL`. 
+  * <strong> registrationType*</strong> `enum` </br> The Type of Tax Registration for this profile.Tax registration type applies to a person or an organization. Predefined `enum` values are `ENTITY┃TRUST┃JOINT┃401K┃IRA┃INDIVIDUAL`. 
 
   * <strong> taxIdentification*</strong> `object` </br> JSON object descriptor that encloses tax documents identification details.
     * <strong> type</strong> `enum` </br> Type of legal tax document. Predefined `enum` values are `ssn┃giin┃itin┃ftin┃ein`.Allowed `enum` values are `ssn┃itin┃ftin`,If the <strong>registrationType*<strong>  is `INDIVIDUAL` . The variable must be equal to one of the values that have been predefined for it.

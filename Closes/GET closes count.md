@@ -1,0 +1,1 @@
+This endpoint returns the count of closes that have been done on the deal.

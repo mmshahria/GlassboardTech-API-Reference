@@ -39,36 +39,32 @@ Carry Percentage Breakpoint.
        * <strong>amount<strong> `number` </br>
 Carry Percentage Amount. Constraints `Min 0┃Max 100┃ multiple of 0.001`.
 
-* <strong> additionalCarryRecipients </strong> `[object]`
-Additional carry recipients details. Data returned as JSON _array_ object. 
-    * <strong> individual </strong> `object`</br> Additional carry recipients can either be any _individual_ or any other organizer.  
-        * <strong> id </strong> `string` </br> A unique identifier for additional carry recipent specified by a deal organizer for this deal.
-        * <strong> ownerId </strong> `string` </br> A unique identifier for the owner id.
-        * <strong> name </strong> `string` </br> Full name of the additional carry recipient specified by a deal **organizer**. A valid value must be 2 to 1024 characters.
-        * <strong> type </strong> `string` </br> Type of the additional carry recipient. Can be of two types individual or entity.
-        * <strong> title </strong> `string` </br> Use case 
-        * <strong> isUSBased </strong> `boolean` </br> Has the value _true_ if the carry recipient is based on U.S. or the value _false_ if the recipient is based on other countries.
-        *   <strong> address </strong> `object` </br> Additional carry recipient's address. Data Returned as JSON object.
-            * <strong> address1* </strong> `string` </br> Address line 1 (e.g., street, PO Box, or company name).
-            * <strong> address2 </strong> `string` </br> Address line 2 (e.g., apartment, suite, unit, or building).
-            * <strong> city* </strong> `string` </br> City, district, suburb, town, or village.
-            * <strong> state </strong> `string` </br> State, county, province, or region.
-            * <strong> postalCode* </strong> `string` </br> ZIP or postal code.
-            *  <strong> country* </strong> `string` </br> Can be used for full country name or Two-letter country code.
-
-    *   <strong> phone </strong> `string` </br> Additional carry recipients phone number.
-    *   <strong> email </strong> `string` </br> Additional carry recipients email address.
-    *   <strong> taxDetails `object` </strong> 
-        *   <strong> type* </strong> `enum` </br> Type of tax identification document. _Data-type_ `enum` consists of predefined type values `ssn┃itin┃ftin.`
-        *   <strong> value* </strong> `string` </br> Contains Alphanumeric value of the tax document identification.
-    *   <strong> dateOfBirth </strong> `string` </br> Date of birth of this additional carry recipient. Data must be formatted as _YY-MM-DD_.
-
-    *   <strong> stateOfFormation </strong> `string` </br> The State in Which the deal was formed.
-    *   <strong> countryOfFormation </strong> `string` </br> The State in Which the deal was formed.
-    *   <strong> taxIdType </strong> `string` </br> Can be useful for defining the type of tax identification document. 
-    *   <strong> taxId</strong> `string` Can be useful to keep records of tax identification specified by a deal **organizer** for an additional carry recipient.
-    *   <strong> carryPercentage </strong> `number` </br> Additional carry percentage specified by a deal _organizer_. _Data-type_ `number` is used for any numeric type, either integers or floating point numbers. Minimum valid _value-range_ is 0 to 100.
-    * <strong> validations <strong> `[string]` </br> JSON array object descriptor that encloses validations related information associated with Additional carry recipients. Each array index consists of disparate validation information for a specific Additional carry recipient.
+* <strong> individual </strong> `object`</br> JSON object descriptor that encloses the details of an individual. Additional carry recipients can either be any individual entity or person.
+    * <strong> id </strong> `string` </br> A unique identifier of the additional carry recipients.
+    * <strong> ownerId </strong> `string` </br> A unique identifier of the owner.
+    * <strong> name </strong> `string` </br> Full name of the additional carry recipient.Additional carry recipients can either be any individual entity or person.A valid value must be 2 to 1024 characters.
+    * <strong> type </strong> `string` </br> Type of the additional carry recipient. Can be useful to define the type of carry recipient.
+    * <strong> title </strong> `string` </br> The title of the signer/additional carry recipient.In some settings, a person's title may consist of one or more words placed before or after their given name. There are a number of ways it might be used, including heredity, official status, or academic or professional certification.
+    * <strong> isUSBased </strong> `boolean` </br> Has the value _true_ if the carry recipient is based on U.S. or the value _false_ if the recipient is based on other countries.
+    * <strong> address </strong> `object` </br>Additional carry recipient's address object.
+        * <strong> address1* </strong> `string` </br> Address line 1 (e.g., street, PO Box, or company name).
+        * <strong> address2 </strong> `string` </br> Address line 2 (e.g., apartment, suite, unit, or building).
+        * <strong> city* </strong> `string` </br> City, district, suburb, town, or village.
+        * <strong> state </strong> `string` </br> State, country, province, or region.
+        * <strong> postalCode* </strong> `string` </br> ZIP or postal code.
+        *  <strong> country* </strong> `string` </br> Can be used for full country name or Two-letter country code.
+    *   <strong> phone </strong> `string` </br>The phone number of the Additional carry recipient/singer
+    *   <strong> email </strong> `string` </br>The email address of the Additional carry recipient/singer
+    *   <strong> taxDetails </strong> `object` </br> JSON object descriptor that encloses the tax details.
+    *   <strong> type* </strong> `enum` </br> Type of tax identification document. Predefined `enum` values are  `ssn┃itin┃ftin`.
+    *   <strong> value* </strong> `string` </br> Contains Alphanumeric value of the tax document identification.
+*   <strong> dateOfBirth </strong> `string` </br> Date of birth of this additional carry recipient. Data must be formatted as _YY-MM-DD_.
+* <strong> stateOfFormation </strong> `string` </br> The state of formation if the carry recipient is an entity.
+* <strong> countryOfFormation </strong> `string` </br> The country of formation if carry recipient is an entity.
+* <strong> taxIdType </strong> `string` </br> Can be useful for defining the type of tax identification document. 
+* <strong> taxId</strong> `string` Can be useful to keep records of tax identification specified by a deal **organizer** for an additional carry recipient.
+* <strong> carryPercentage </strong> `number` </br> Additional carry percentage specified by a deal _organizer_. _Data-type_ `number` is used for any numeric type, either integers or floating point numbers. Minimum valid _value-range_ is 0 to 100.
+* <strong> validations <strong> `[string]` </br> JSON array object descriptor that encloses validations related information associated with Additional carry recipients. Each array index consists of disparate validation information for a specific Additional carry recipient.
 
 * <strong> name* </strong> `string`
 A meaningful deal name is used throughout to identify this deal.A valid value must be 2 to 1024 characters.

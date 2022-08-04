@@ -35,11 +35,11 @@ Carry Percentage Amount. Constraints `Min 0┃Max 100┃ multiple of 0.001`
 
 <strong> additionalCarryRecipients </strong> `[object]`
 
-JSON _array_ Object descriptor that encloses the list of additional Carry Recipients associated with this deal.
-* <strong> individual </strong> `object`</br> JSON object descriptor that encloses _individual_ (a natural person or _entity_) related information.Additional carry recipients can either be any individual or entity.
+JSON _array_ object descriptor that encloses the details of Additional carry recipients.
+* <strong> individual </strong> `object`</br> JSON object descriptor that encloses the details of an individual. Additional carry recipients can either be any individual entity or person.
     * <strong> id </strong> `string` </br> A unique identifier for this additional carry recipient assigned by the system. 
     * <strong> ownerId </strong> `string` </br> A unique owner identifier for this additional Carry Recipient.
-    * <strong> name </strong> `string` </br> Full name of the additional carry recipient specified by deal **organizer**. A valid value must be 2 to 1024 characters.
+    * <strong> name </strong> `string` </br> Full name of the additional carry recipient.Additional carry recipients can either be any individual entity or person.A valid value must be 2 to 1024 characters.
     * <strong> type </strong> `string` </br> Type of the additional carry recipient. Can be useful to define the type of _individual_.
     * <strong> title </strong> `string` </br>The title of the signer/additional carry recipient. 
     > In some settings, a person's title may consist of one or more words placed before or after their given name. There are a number of ways it might be used, including heredity, official status, or academic or professional certification.
@@ -53,7 +53,7 @@ JSON _array_ Object descriptor that encloses the list of additional Carry Recipi
         *  <strong> country* </strong> `string` </br> Can be used for full country name or Two-letter country code.A valid value must be 2 to 1024 characters.
     * <strong> phone </strong> `string` </br> Additional carry recipient's phone number.
     * <strong> email </strong> `string` </br> Additional carry recipient's email address.
-    * <strong> taxDetails `object` </strong> 
+    * <strong> taxDetails </strong> `object` JSON object descriptor that encloses the tax details.
         * <strong> type* </strong> `enum` </br> Type of tax identification document. Predefined `enum` values are  `ssn┃itin┃ftin`.
         *   <strong> value* </strong> `string` </br> Contains the Alphanumeric value of the tax document identification.
 *   <strong> dateOfBirth </strong> `string` </br> Date of birth of this additional carry recipient. Data must be formatted as _YY-MM-DD_.

@@ -1,0 +1,1 @@
+Files of all kinds that can be attached to other objects or stand alone.

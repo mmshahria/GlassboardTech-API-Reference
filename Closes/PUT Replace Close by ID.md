@@ -1,6 +1,6 @@
-Partially modify existing close records based on the supplied `key:value` pairs in the JSON format. Supply the unique `closeId` in the path parameter to execute a partial update operation to a specific close for the current user.
+Replace an existing close record based on the input parameters `key:value` pair that are supplied in the request body. Supply the unique path parameter `closeId` in the canonical path to execute a replace operation to a specific, close resource.
 
-# Attributes
+# Parameters
 
 <strong>id<strong> `string`
 

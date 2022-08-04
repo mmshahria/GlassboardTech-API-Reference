@@ -37,24 +37,24 @@ Carry Percentage Breakpoint.
 Carry Percentage Amount. Constraints `Min 0┃Max 100┃ multiple of 0.001`.
 
 <strong> additionalCarryRecipients </strong> `[object]` </br>
-Additional carry recipients details. Data returned as JSON _array_ object. 
-* <strong> individual </strong> `object`</br> Additional carry recipients can either be any _individual_ or any other organizer.  
-    * <strong> id </strong> `string` </br> A unique identifier for additional carry recipient specified by a deal organizer for this deal.
-    * <strong> ownerId </strong> `string` </br> A unique identifier for the owner id.
-    * <strong> name </strong> `string` </br> Full name of the additional carry recipient specified by a deal **organizer**. A valid value must be 2 to 1024 characters.
+JSON _array_ object descriptor that encloses the details of Additional carry recipients.
+* <strong> individual </strong> `object`</br> JSON object descriptor that encloses the details of an individual. Additional carry recipients can either be any individual entity or person.
+    * <strong> id </strong> `string` </br> A unique identifier of the additional carry recipients.
+    * <strong> ownerId </strong> `string` </br> A unique identifier of the owner.
+    * <strong> name </strong> `string` </br> Full name of the additional carry recipient.Additional carry recipients can either be any individual entity or person.A valid value must be 2 to 1024 characters.
     * <strong> type </strong> `string` </br> Type of the additional carry recipient. Can be useful to define the type of carry recipients.
-        * <strong> title </strong> `string` </br> Use case undefined.
+    * <strong> title </strong> `string` </br> The title of the signer/additional carry recipient..In some settings, a person's title may consist of one or more words placed before or after their given name. There are a number of ways it might be used, including heredity, official status, or academic or professional certification.
     * <strong> isUSBased </strong> `boolean` </br> Has the value _true_ if the carry recipient is based on U.S. or the value _false_ if the recipient is based on other countries.
-    *   <strong> address </strong> `object` </br> Additional carry recipient's address object.
+    * <strong> address </strong> `object` </br> Additional carry recipient's address object.
         * <strong> address1* </strong> `string` </br> Address line 1 (e.g., street, PO Box, or company name).
         * <strong> address2 </strong> `string` </br> Address line 2 (e.g., apartment, suite, unit, or building).
         * <strong> city* </strong> `string` </br> City, district, suburb, town, or village.
-            * <strong> state </strong> `string` </br> State, county, province, or region.
+        * <strong> state </strong> `string` </br> State, county, province, or region.
         * <strong> postalCode* </strong> `string` </br> ZIP or postal code.
         *  <strong> country* </strong> `string` </br> Can be used for full country name or Two-letter country code.
-*   <strong> phone </strong> `string` </br> Additional carry recipients phone number.
-*   <strong> email </strong> `string` </br> Additional carry recipients email address.
-*   <strong> taxDetails `object` </strong> 
+*   <strong> phone </strong> `string` </br> Additional carry recipient/ signer phone number.
+*   <strong> email </strong> `string` </br> Additional carry recipient/signer email address.
+*   <strong> taxDetails </strong> `object`  JSON object descriptor that encloses the tax details.
     *   <strong> type* </strong> `enum` </br> Type of tax identification document. _Data-type_ `enum` consists of predefined type values `ssn┃itin┃ftin.`
     *   <strong> value* </strong> `string` </br> Contains Alphanumeric value of the tax document identification.
 *   <strong> dateOfBirth </strong> `string` </br> Date of birth of this additional carry recipient. Data must be formatted as _YY-MM-DD_.
@@ -214,11 +214,11 @@ The current status of the tax for this deal.Allowed `enum` values are `TAX DATA 
 
 <strong> importedSource </strong> `string`
 
-Use case undefined.
+
 
 <strong> importedDate</strong> `date-time ┃ null`
 
-Use case undefined.
+
 
 <strong> estimatedCloseCount </strong> `number`
 
