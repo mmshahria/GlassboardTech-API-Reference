@@ -39,7 +39,7 @@ Carry Percentage Amount. Constraints `Min 0┃Max 100┃ multiple of 0.001`.
 <strong> additionalCarryRecipients </strong> `[object]` </br>
 JSON _array_ object descriptor that encloses the details of Additional carry recipients.
 * <strong> individual </strong> `object`</br> JSON object descriptor that encloses the details of an individual. Additional carry recipients can either be any individual entity or person.
-    * <strong> id </strong> `string` </br> A unique identifier of the additional carry recipients.
+    * <strong> id </strong> `string` </br> A unique identifier of the additional carry recipient.
     * <strong> ownerId </strong> `string` </br> A unique identifier of the owner.
     * <strong> name </strong> `string` </br> Full name of the additional carry recipient.Additional carry recipients can either be any individual entity or person.A valid value must be 2 to 1024 characters.
     * <strong> type </strong> `string` </br> Type of the additional carry recipient. Can be useful to define the type of carry recipients.

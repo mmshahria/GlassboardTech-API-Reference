@@ -49,7 +49,7 @@ JSON _array_ object descriptor that encloses the details of Additional carry rec
     * <strong> type </strong> `string` </br> Type of the additional carry recipient. Can be useful to define the type of carry recipient.
     * <strong> title </strong> `string` </br> The title of the signer/additional carry recipient.In some settings, a person's title may consist of one or more words placed before or after their given name. There are a number of ways it might be used, including heredity, official status, or academic or professional certification.
     * <strong> isUSBased </strong> `boolean` </br> Has the value _true_ if the carry recipient is based on U.S. or the value _false_ if the recipient is based on other countries.
-    *   <strong> address </strong> `object` </br> Additional carry recipient's address. Data must be formatted as JSON object.
+    * <strong> address </strong> `object` </br>Additional carry recipient's address object.
         * <strong> address1* </strong> `string` </br> Address line 1 (e.g., street, PO Box, or company name).
         * <strong> address2 </strong> `string` </br> Address line 2 (e.g., apartment, suite, unit, or building).
         * <strong> city* </strong> `string` </br> City, district, suburb, town, or village.

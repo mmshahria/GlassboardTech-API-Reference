@@ -1,0 +1,1 @@
+Delete an existing file from the current user's data source. Supply the unique `fileId` in the path parameter to execute the delete operation to a specific file for the current user.

@@ -1,0 +1,1 @@
+Returns the contents of a file in PDF format.Supply the unique `fileId` in the path parameter, and this endpoint will return the corresponding file in PDF format.
