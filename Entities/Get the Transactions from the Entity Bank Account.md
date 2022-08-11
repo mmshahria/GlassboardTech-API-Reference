@@ -1,0 +1,1 @@
+Retrieves the Transaction Listing from the Entity Bank Account (if present).Supply the unique `entityId` in the path parameter, and this endpoint will respond to the corresponding Transaction Listing from the Entity bank account.

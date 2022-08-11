@@ -86,7 +86,7 @@ Has the value _true_ if a deal exists for raising investment or the value _false
 
  <strong> estimatedCloseDate </strong> `date-time`
 
-An expected close date and time. Must be formatted as `1970-01-01T00:00:00.000Z`
+An expected close date and time. Must be formatted as `1970-01-01T00:00:00.000Z`.
 
 <strong> marketing </strong> `object`
 
@@ -182,19 +182,19 @@ Describes the deal’s current status.
 _Data-type_ `enum` consists of predefined status values `DRAFT┃IN-PROVISIONING┃OPEN┃IN CLOSING┃CLOSED.` The variable must be equal to one of the values that have been predefined for it while updating the deal _status_.
 
 
-  <strong> createdAt </strong> `date-time`
+<strong> createdAt </strong> `date-time`
 
 Describes the date & time at which the deal was created. Data formatted as `1970-01-01T00:00:00.000Z`
 
-  <strong> updatedAt </strong> `date-time`
+<strong> updatedAt </strong> `date-time`
 
 Describes the date & time at which the deal was last updated. Data formatted as `1970-01-01T00:00:00.000Z`.
 
-  <strong> ownersDealUrl </strong> `string`
+<strong> ownersDealUrl </strong> `string`
 
 
 
- <strong> deletedAt </strong> `date-time`
+<strong> deletedAt </strong> `date-time`
 
 Describes the date & time at which the deal was deleted. Data formatted as `1970-01-01T00:00:00.000Z`
 

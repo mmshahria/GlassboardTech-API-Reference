@@ -1,0 +1,1 @@
+Delete an existing Entity records from the current user's (API end user) data source. Supply the unique `entityId` in the path parameter to execute delete operation to a specific Entity for the current user (API end user).

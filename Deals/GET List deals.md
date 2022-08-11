@@ -135,7 +135,7 @@ Has the value _true_ if a deal organizer is looking for qualified investors in t
 
 * <strong>id </strong> `string`
 
-A unique identifier for a specified deal.
+A unique identifier to locate this deal assigned by the system.
 
 * <strong> ownerId </strong> `string`
 

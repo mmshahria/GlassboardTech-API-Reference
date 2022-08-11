@@ -12,7 +12,7 @@ An array list of bank accounts. Here, the data attribute is used as a simple des
 
 * <strong> status </strong> `string` </br> Current status of the bank account.Allowed values are `DRAFT┃IN-PROVISIONING┃OPEN┃IN CLOSING┃CLOSED`.
 
-* <strong> accountNumber </strong> `string` </br>.Bank account number associated with this bank account.
+* <strong> accountNumber </strong> `string` </br> Bank account number associated with this bank account.
   > An account number is a unique code assigned to the account owner for identifying a specific bank account holder.
 
 * <strong> routingNumber </strong> `string` </br>The routing transit number associated with this bank account.

@@ -1,4 +1,4 @@
-Retrieves a specified subscription for a valid identifier. Supply the unique `subscriptionId`, and this endpoint will respond to the corresponding subscription details for the current user.
+Retrieves the details of a specified subscription for a valid identifier. Supply the unique `subscriptionId`, and this endpoint will respond to the corresponding subscription details for the current user.
 
 # Attributes
 
@@ -168,7 +168,7 @@ A unique identifier assigned by the system while creating a user profile as an i
 
 <strong>sideLetter<strong> `object`
 
-JSON object descriptor that encloses the side letter properties.
+JSON object descriptor that encloses the side letter properties.Side letter is used for customized carry percentages for a particular investor.
 
 * <strong>managementFee<strong> `object` </br>
 Object descriptor that encloses the  information for management fee deduction.

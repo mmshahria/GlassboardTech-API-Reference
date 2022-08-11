@@ -1,0 +1,1 @@
+An entity (typically a fund) is the legal entity that gets generated during the deal creation process.

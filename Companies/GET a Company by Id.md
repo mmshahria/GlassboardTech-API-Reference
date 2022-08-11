@@ -1,4 +1,4 @@
-Retrieves an specified company for a valid identifier for the current user. Supply the unique `companyId` and this endpoint will respond with the corresponding asset details for the current user.
+Retrieves the details of a specified company for a valid identifier for the current user. Supply the unique `companyId` and this endpoint will respond with the corresponding company details for the current user.
 
 # Attributes
 

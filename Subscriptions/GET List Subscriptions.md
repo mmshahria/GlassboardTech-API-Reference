@@ -8,7 +8,7 @@ JSON array object descriptor that encloses the list of subscriptions served from
 
 <strong>id</strong>`string`
 
-A unique identifier is assigned by the system while creating a subscription.
+A unique identifier to locate this Subscription assigned by the system.
 
 <strong>tenantId<strong> `string`
 A unique identifier used for API authentication and authorization.

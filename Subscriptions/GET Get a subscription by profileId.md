@@ -1,4 +1,4 @@
-Retrieves a specified subscription for a valid profile identifier. Supply the unique `profileId`, and this endpoint will respond to the corresponding subscription details for the current user.
+Retrieves the details of a specified subscription for a valid profile identifier. Supply the unique `profileId`, and this endpoint will respond to the corresponding subscription details for the current user.
 
 # Attributes
 

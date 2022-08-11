@@ -45,7 +45,7 @@ The tax contact object descriptor that encloses the  validated tax contact infor
 
 <strong>createdAt<strong> `date-time` <br> The date and time stamp when the company information is first introduced in the platform.
 
-<strong>updatedAt<strong> `date-time` <br> The date and time stamp when the company information last modified.
+<strong>updatedAt<strong> `date-time` <br> The date and time stamp when the company information was last updated.
 
 <strong>entityType<strong> `enum`
 
