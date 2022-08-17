@@ -17,7 +17,7 @@ Description or reference of a specific transaction if specified at the time of c
 
 <strong>book_id</strong> `string┃null`
 
-The unique identifier of the Booking Transfer that originated in this transaction.Returned value can be `null` if it's not a book transfer.
+The unique identifier of the Booking Transfer object that originated in this transaction.Returned value can be `null` if it's not a book transfer.
 
 > A unique identifier `book-id` refers to the object that contains the details of fund transfer between two accounts of the same bank in Payments. 
 
@@ -41,13 +41,13 @@ A unique identifier for this transaction.
 
 <strong>ach_id</strong> `string┃null`
 
-A unique identifier of the ACH transaction.The value can be `null` if it's not an ACH transaction. 
+A unique identifier of the ACH object that originated this transaction.The value can be `null` if it's not an ACH transaction. 
 
 > ACH (Automated Clearing House) is a network used for electronically transfer money between bank accounts across the United States.
 
 <strong>wire_id</strong> `string┃null`
 
-A unique identifier of the wire transaction. The value can be `null` if it's not wire transaction. 
+A unique identifier of the wire object that originated this transaction. The value can be `null` if it's not wire transaction. 
 
 > A wire transfer can be made from one bank account to another bank account, or through a transfer of cash at a cash office.
 

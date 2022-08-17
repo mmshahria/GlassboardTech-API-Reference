@@ -65,3 +65,5 @@ JSON object descriptor that encloses the beneficiary address on the Account.
 * <strong>country<strong> `string` </br> The country in which the bank account is located.Constraints `Max 2 chars`.
 
 <strong>type*<strong> `string`
+
+Describes the type of beneficiary data.Type can be ACH or Wire.

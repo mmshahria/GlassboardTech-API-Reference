@@ -1,11 +1,9 @@
+Replace a deal resource based on the input parameters `key:value` pair that are supplied in JSON format. Supply the unique `dealId` from either a deal creation request or the deal lists. Our API will replace the existing deal resources using the supplied data. 
 
-Retrieves the list of deals for the current user. This endpoint returns data based on the authorized access level of the current user.
+> PUT is a method of modifying resources where the client sends data that updates the entire resource. PUT method is defined to create new resources when they don't exist, so PUT is sometimes used as an idempotent alternative to POST.
 
-# Attributes
 
-<strong> data </strong> `[object]`
-
-Simple descriptor for the JSON _array_ object. It encloses the list of deals.
+# Parameters
 
 <strong> profileId* </strong> `string`
 
@@ -141,10 +139,6 @@ Has the value _true_ if this deal requires qualified purchasers in the platform 
 
 > `Qualified purchaser` means a person with at least $5 million in investments, a company with at least $5 million in investments owned by close relatives, a trust not formed for the investment with at least $5 million in investments, an investment manager with at least $25 million under management, or a company with at least $25 million in investments.
 
-<strong>id<strong> `string`
-
-The unique internal identifier to locate this deal.
-
 <strong> ownerId </strong> `string`
 
 The unique identifier of the user who owns this object.
@@ -238,12 +232,3 @@ The date & time at which the data was imported.The value can be `null` if there 
 The total number of expected closes on this deal.
 
 > A close can represent the close of the entire deal or just a subset of investments (i.e. a tranche).
-
-
-<strong>perPage</strong> `number`
-
-The total count of deals returned per page. This can be specified as a query string parameter.
-
-<strong>totalCount</strong> `number`
-
-Total count of the deals list the API call returned.

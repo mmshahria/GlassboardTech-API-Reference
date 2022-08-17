@@ -1,6 +1,8 @@
-Retrieves the list of profiles for the current user (API end user). This endpoint returns data in compliance with it's authorized access level.
+Partially modify existing Profile records based on the supplied `key:value` pairs in the JSON format. Supply the unique `profileId` in the path parameter to execute a partial update operation to a specific profile for the current user.
 
-# Attributes
+> PATCH is a method of modifying resources where the client sends partial data that is to be updated without modifying the entire data.
+
+# Parameters
 
 <strong> profileType</strong> `enum`
 
@@ -11,7 +13,7 @@ Type of a profile in the organization specified at the time of creating this pro
 Preferred display name specified by the authorized profile owner, if any.
 
 <strong>managerId<strong> `string`
-Unique ID of the Manager for Deals created by this Profile.
+Unique ID of the Manager for Deals created by this Profile
 
 <strong>masterEntityId<strong> `string`
 Unique ID of the Master Entity for Deals created by this profile.
@@ -51,7 +53,7 @@ The email address associated with this profile. Pattern `^\S+@\S+$`.
 JSON object descriptor that encloses brokerage account details associated with this profile.
 
   * <strong> brokerName *</strong> `string` </br> Full name of the broker.Constraints Max 128 chars.
-  * <strong> dtcNumber *</strong> `string` </br> Depository Trust Company Number.Constraints Max 4 chars.
+  * <strong> dtcNumber *</strong> `string` </br> Constraints Max 4 chars.
     > dtcNumber helps facilitate transactions between financial institutions.
   * <strong> accountNumber *</strong> `string` </br> Brokerage account number.Constraints Max 64 chars.
 
@@ -60,7 +62,7 @@ JSON object descriptor that encloses brokerage account details associated with t
 
 <strong> isERA <strong> `boolean`
 
-Has the value true if the Profile is an entity holds ERA (Exempt Reporting Adviser) status otherwise the value is false.
+ Has the value true if the Profile is an entity holds ERA (Exempt Reporting Adviser) status otherwise the value is false.
 
 <strong> isSingleMemberLLC</strong> `boolean`
 
@@ -172,7 +174,7 @@ JSON object descriptor that encloses the details of beneficial owner (Individual
 
 > Individuals or natural people who ultimately owns this profile.
 
-  * <strong> id</strong> `string` <br> A unique identifier of the beneficial owner.
+  * <strong> id</strong> `string` <br> A unique identifier.
   * <strong> ownerId</strong> `string` <br> A unique identifier of the owner for this beneficial owner. 
   * <strong> name</strong> `string` </br> Full name of the beneficial owner. 
   * <strong> type</strong> `string` </br> Type of the beneficial owner.
@@ -210,8 +212,8 @@ Account Number. Constraints Max 64 chars.
 * <strong>custodianName<strong> `string` </br>
 Custodian Name. Constraints Max 128 chars.
 
-<strong>id<strong>: `string`
-The unique internal identifier to locate this Profile.
+<strong>id<strong> `string`
+A unique identifier assigned by the system while creating a user profile as an individual or an entity.
 
 <strong> name</strong> `string` 
 

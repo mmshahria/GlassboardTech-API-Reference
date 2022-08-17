@@ -32,7 +32,7 @@ The Email address of the beneficiary.
 
 <strong> serviceObjectId </strong> `string`
 
-Service Object identifier associated with this banking beneficiary.
+Counter party identifier for banking provider
 
 <strong> createdAt </strong> `date-time`
 
@@ -42,9 +42,6 @@ Describes the date & time at which the banking beneficiary was created. Data for
 
 Describes the date & time at which the banking beneficiary was last updated. Data formatted as `1970-01-01T00:00:00.000Z`.
 
-providerMeta `object` 
-JSON Object descriptor that encloses the provider's meta details.
-
 <strong>isDeleted</strong> `boolean`
 
-Has the value _true_ if a specified banking beneficiary is deleted; otherwise, the value _false_.
+Has the value _true_ if the banking beneficiary is deleted; otherwise, the value _false_.

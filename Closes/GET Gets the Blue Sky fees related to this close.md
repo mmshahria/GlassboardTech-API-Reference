@@ -4,7 +4,7 @@ Retrieves a count of investors per state, the amount invested per state, and the
 
 <strong>stateSummaries<strong> `[object]`
 
-An array list of Banking Beneficiaries. Here, the data attribute is used as a simple descriptor for the returned array list object that encloses the list of Banking Beneficiaries for the current user.JSON Array Object descriptor that encloses the list of state summaries associated with this close. Each _array_ index consists of a count of investors per state and the amount invested per state.
+JSON Array Object descriptor that encloses the list of state summaries associated with this close. Each _array_ index consists of a count of investors per state and the amount invested per state.
 
 <strong>firstInvestmentDate<strong> `date`
 

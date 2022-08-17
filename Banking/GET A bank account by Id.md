@@ -8,7 +8,7 @@ The internal identifier to locate the bank account.
 
 <strong> ownerId </strong> `string`
 
-A unique identifier of the owner that the bank account is associated with.
+The unique identifier of the user who owns this object.
 
 <strong> status </strong> `string`
 
@@ -22,7 +22,7 @@ A unique identifier used for API authentication and authorization.
 
 <strong> createdAt </strong> `date-time`
 
-Describes the date & time at which the bank account was created. Data formatted as `1970-01-01T00:00:00.000Z`
+Describes the date & time at which the bank account was created. Data formatted as `1970-01-01T00:00:00.000Z`.
 
 <strong> updatedAt </strong> `date-time`
 
@@ -50,11 +50,11 @@ The physical address of the bank.
 
 <strong>bankContact </storng> `object` 
 
-JSON object descriptor that encloses the bank contact details.
+JSON object descriptor that encloses a set of `key:value` pairs representing bank contact details. 
 
-*   <strong> name </strong> `string`</br> The name of the person or business that owns the bank account.
-*   <strong> phone </strong> `string`</br> The phone number of the person or business that owns the bank account.
-*   <strong> email </strong> `string`</br> The email address of the person or business that owns the bank account.
+*   <strong> name </strong> `string`</br> Bank Contact Name(person).
+*   <strong> phone </strong> `string`</br> Bank Contact Phone number.
+*   <strong> email </strong> `string`</br> Bank Contact Email address.
 
 <strong> swiftCode </strong> `string`
 

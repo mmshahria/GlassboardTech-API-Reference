@@ -33,7 +33,7 @@ The Email address of the beneficiary.
 
 <strong>serviceObjectId<strong> `string`
 
-Service Object identifier associated with this banking beneficiary.
+Counter party identifier for banking provider
 
 <strong>createdAt<strong> `date-time`
 
@@ -42,10 +42,6 @@ Timestamp for the creation of this banking beneficiary.
 <strong>updatedAt<strong> `date-time`
 
 Timestamp for the last update record for this beneficiary.
-
-<strong>providerMeta<strong> `object`
-
-JSON Object descriptor that encloses the provider meta details.
 
 <strong>isDeleted<strong> `boolean`
 
