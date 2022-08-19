@@ -13,6 +13,7 @@ The routing transit number for a linked bank account for this ACH transaction.
 <strong>account*<strong> `string`
 
 Account number for a linked bank account for this ACH transaction. 
+
 > An account number is a unique code assigned to the account owner for identifying a specific bank account holder.
 
 <strong>typeOfAccount*<strong> `enum`

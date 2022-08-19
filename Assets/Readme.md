@@ -1,3 +1,1 @@
-This resource represents all the details that is essential to describe an asset to the end users.
-
-> Assets act as the investment vehicle for a deal. An asset can take on a variety of forms, including common stock in a business, real estate, cryptocurrency, or even fractional ownership of a private jet.
+Assets represent the investment vehicle for a deal. An asset can take one of many forms, such as, shares of common stock in a company, real estate, crypocurrency, or even fractional ownership in a private jet. The object specification is general enough to include a complete description of the asset, supporting documentation, and profiles of the key team members.

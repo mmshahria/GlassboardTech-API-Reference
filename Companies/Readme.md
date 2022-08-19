@@ -1,3 +1,1 @@
 This resource represents all the details that is required to describe a company and its disparate purposes. Some of the examples include  companies of fund managers, portfolio companies, or companies of registered agents.
-
-> A company is a legal organization founded by a group of people or individually to engage in and manage a commercial or industrial business operation. Business lines are determined by the type of organization that is formed. These include partnerships, corporations and sole proprietorships.
