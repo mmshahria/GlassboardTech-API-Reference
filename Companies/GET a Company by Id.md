@@ -120,7 +120,7 @@ Used to specify the type of business activity the company engages in, as defined
 
 <strong>arbitrationCity<strong> `string`
 
-Arbitration City.
+Arbitration City name.
 > Arbitration is a mechanism whereby a disagreement is submitted, by consent of the parties, to one or more arbitrators who render a legally enforceable ruling.
 
 <strong>arbitrationState<strong> `string`

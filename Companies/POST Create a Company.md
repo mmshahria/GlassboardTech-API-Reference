@@ -21,7 +21,8 @@ The contact phone number of the company.
 Name of the state where the company was Formed.
 
 <strong>address<strong> `object`
-JSON object descriptor that encloses the address of the company.
+
+JSON object descriptor that encloses the physical address of the company.
 
 * <strong>address1*<strong> `string` <br> Company address Line 1.A valid value must be 2 to 1024 characters.
 * <strong>address2</strong> `string` <br> Company address Line 2.A valid value must be 2 to 1024 characters.
@@ -35,7 +36,7 @@ JSON object descriptor that encloses the address of the company.
 JSON object descriptor that encloses the tax contact details.
 
 * <strong>type<strong> `enum` <br> Tax ID type. Expected predefined values are `ssn┃itin┃ftin`.
-* <strong>taxId<strong> `string` <br> The unique tax document identification number.
+* <strong>taxId<strong> `string` <br> Tax document identification number.
 * <strong>address1<strong> `string` <br> Tax Contact Address 1.
 * <strong>address2<strong> `string` <br> Tax Contact Address 2.
 * <strong>city<strong> `string` <br> Tax Contact City name.
@@ -45,7 +46,7 @@ JSON object descriptor that encloses the tax contact details.
 
 <strong>createdAt<strong> `date-time` <br> The date and time stamp when the company object is created on the platform.
 
-<strong>updatedAt<strong> `date-time` <br> The date and time stamp when the company object last modified.
+<strong>updatedAt<strong> `date-time` <br> The date and time stamp when the company object was last modified.
 
 <strong>entityType<strong> `enum`
 
@@ -115,7 +116,7 @@ Used to specify the type of business activity the company engages in, as defined
 
 <strong>arbitrationCity<strong> `string`
 
-Arbitration City.
+Arbitration City name.
 > Arbitration is a mechanism whereby a disagreement is submitted, by consent of the parties, to one or more arbitrators who render a legally enforceable ruling.
 
 <strong>arbitrationState<strong> `string`
