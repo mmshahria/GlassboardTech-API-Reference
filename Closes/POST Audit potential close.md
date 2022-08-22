@@ -9,4 +9,4 @@ The unique internal identifier to locate a particular deal for this audit.
 
 <strong>subscriptionIds<strong> `[string]`
 
-JSON array object description that encloses the list of subscription identifiers for this audit.
+JSON array object description that encloses the list of subscription identifiers associated with this audit.

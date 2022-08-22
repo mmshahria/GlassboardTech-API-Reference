@@ -13,8 +13,8 @@ Organizer's signature in the specified document for this closing. _dataType_ bin
 
 <strong>statement<strong>`object`
 
-JSON object descriptor that describes the statement associated with closing.
+JSON object descriptor that contains the Line Items for Fees Statement on this Close.
 
 <strong>subscriptions<strong> `[string]`
 
-JSON array object description that encloses the list of all subscriptions associated with this closing.
+JSON array object descriptor that encloses the list of all subscriptions associated with this closing.

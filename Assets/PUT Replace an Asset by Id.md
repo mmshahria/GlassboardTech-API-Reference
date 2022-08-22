@@ -50,7 +50,7 @@ The amount of Fractional Ownership for the Asset. Constraints `Min 0┃ multiple
 
 <strong>funding</strong> `object` 
 
-JSON object descriptor that encloses the Funding object associated with this asset.
+JSON object descriptor that encloses the Funding status associated with this asset.
 
   * <strong>round<strong> `number` <br> The funding round.The funding round refers to the rounds of funding that startups go through to raise capital. The number representation of  pre-seed, seed, series A, B, C, etc.
 
@@ -226,5 +226,5 @@ Has the value _true_ if the asset is in the deleted status or the value _false_ 
 
 <strong>additionalProperties</strong> `object`
 
-JSON object descriptor that encloses additional properties related to the asset.
+JSON object descriptor that encloses a set of `key:value` pairs representing additional properties related to the asset.This can be useful for storing additional information in a structured format.  The enclosed data body must be in JSON format.
 

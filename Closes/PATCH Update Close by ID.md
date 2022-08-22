@@ -1,4 +1,4 @@
-Partially modify existing close records based on the supplied `key:value` pairs in the JSON format. Supply the unique `closeId` in the path parameter to execute a partial update operation to a specific close for the current user.
+Partially update an existing close record based on the supplied `key:value` pairs in the JSON format. Supply the unique `closeId` in the path parameter to execute a partial update operation to a specific close for the current user.
 
 # Parameters
 
@@ -8,7 +8,7 @@ A unique internal identifier to locate this close.
 
 <strong>ownerId<strong> `string`
 
-The unique internal owner identifier for this close.
+The unique identifier of the user who owns this object.
 
 <strong>tenantId<strong> `string`
 
@@ -44,15 +44,12 @@ Has the value _true_ if the legal documents associated with this close are ready
 
 Has the value _true_ if the fund manager signed in the specified legal documents for this closing;otherwise, the value is _false_.
 
-<strong>needsApproval<strong> `boolean`
-
-Checks whether this close needs approval. Has the value _true_ if this particular close needs approval; otherwise, the value is _false_.
-
 <strong>blueSky<strong>`object`
 
-JSON Object descriptor that encloses the blue sky information associated with this close.
+JSON Object descriptor that encloses the blue sky filing information associated with this close.
+
 * <strong>filedDate<strong> `object`
-JSON Object descriptor encloses the timestamp at which the blue sky filing was completed.
+JSON Object descriptor encloses the timestamp at which the blue sky filing is complete.
 
 <strong>purchaseDocsSignedDate<strong> `date-time`
 
@@ -65,10 +62,6 @@ JSON object descriptor that describes the statement for this close.
 <strong>createdAt<strong> `date-time`
 
 Timestamp for the creation of the close.
-
-<strong>sequence<strong> `number`
-
-Sequence number associated with this close.
 
 <strong>status<strong>`object`
 
@@ -88,7 +81,7 @@ A unique internal identifier of the blue Sky Payment Transfer for this close.
 
 <strong>formDFiledDate<strong> `date-time`
 
-The Date and time at which the Form-D filing was completed.
+The Date and time at which the Form-D filing is completed.
 
 <strong>blueSkyPaidDate<strong> `date-time`
 
