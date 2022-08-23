@@ -77,7 +77,7 @@ Specify the identification number corresponding to the type of document.Type of 
 
 <strong> state </strong> `enum`
 
-Specify the state that issued the document. Valid `enum` values are.
+Specify the state that issued the document. Valid `enum` values are
 `AR┃DC┃DE┃FL┃GA┃KS┃LA┃MD┃MO┃MS┃NC┃OK┃SC┃TN┃TX┃WV┃AL┃CT┃IA┃IL┃IN┃ME┃MI┃MN┃NE┃NH┃NJ┃NY┃OH┃RI┃VT┃WI┃CA┃CO┃NM┃NV┃UT┃AZ┃ID┃MT┃ND┃OR┃SD┃WA┃WY┃HI┃AK┃KY┃MA┃PA┃VA`
 
 Only required for the `driving_licence` type in United States of America

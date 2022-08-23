@@ -3,14 +3,13 @@ Retrieves the details of a specified subscription for a valid identifier. Supply
 # Attributes
 
 <strong>tenantId<strong> `string`
-
 A unique identifier used for API authentication and authorization.
 
->Tenant refers to the end user of this API and It's required for identity and access management.
+> Tenant refers to the end user of this API and It's required for identity and access management.
 
 <strong>dealId<strong> `string`
 
-A unique internal identifier of a particular deal for this subscription. It references the interrelation between a subscription and a deal.
+A unique identifier of a particular deal for this subscription.It refers to a particular deal to which a subscriber is making a investment.
 
 <strong>name*<strong> `string`
 
@@ -42,21 +41,23 @@ Amount actually received for this subscription. Constraints `Min 0┃Max 6000000
 <strong>ownershipPercentageAtClose<strong> `number`
 
 Ownership Percentage At the time of Close.Constraints `Min 0`.
+
 > A close can represent the close of the entire deal or just a subset of investments (i.e. a tranche).
 
 <strong>ownershipPercentageAtDistribution<strong> `number`
 
 Ownership Percentage At the time of Distribution.Constraints `Min 0`.
+
 > `Distribution` means the transfer of money or property by the Fund/Deal to one or more Members with respect
 to their Interests, without separate consideration
 
 <strong>transactionId<strong> `string`
 
-Unique transaction identifier generated from the electronic transfer of fund for this transaction.
+Unique transaction identifier generated from the electronic transfer of fund for this subscription.
 
 <strong>transactionIds<strong> `[string]`
 
-JSON object descriptor that encloses an array list of bank transaction's unique identifiers if the subscription consists of disparate subscribers. Each _array_ index consists of a disparate bank transaction identifier.
+JSON object descriptor that encloses an array list of transaction's unique identifiers if the subscription consists of disparate subscribers. Each _array_ index consists of a disparate transaction identifier.
 
 <strong>bankTransactionIds<strong> `[string]`
 
@@ -64,7 +65,7 @@ JSON object descriptor that encloses an array list of bank transaction's unique 
 
 <strong>reverseTransactionId<strong> `string`
 
-Unique reverse transaction identifier for this subscription, if any.
+Unique reverse transaction identifier for this subscription.
 
 <strong>distributionTransactionIds<strong> `[string]`
 
@@ -82,10 +83,6 @@ Has the value _true_ if the subscription `amount` matched or the value _false_ i
 
 Has the value _true_ if the subscriber passed the KycAml or the value _false_ if it's not.
 
-<strong>packageId<strong> `string`
-
-Unique subscription package identifier.
-
 <strong>signers<strong> `[objcet]`
 
 JSON _array_ object descriptor that encloses the list of signers for this subscription.
@@ -96,7 +93,7 @@ JSON object descriptor that encloses the details of bank account for this subscr
 
 <strong>fundingInfo<strong> `object`
 
-JSON object descriptor that encloses the funding inforamtion for this subscription.
+JSON object descriptor that encloses the inforamtion on where the money used to fund the subscription was sourced from.
 
 * <strong>bankName<strong> `string` </br> The name of the bank from which the subscriber's subscription payment is being sent.
 * <strong>isCustomerOfBank<strong> `boolean` </br> Has the value true if the subscriber is a customer of the bank, or is the value _false_ if it's not.
@@ -109,7 +106,7 @@ JSON object descriptor that encloses the details of account transaction for this
 
 <strong>documents<strong> `object`
 
-JSON object descriptor that encloses the details of legal documents for this subscription.
+JSON object descriptor that contatins the legal documents for this subscription.
 
 * <strong>capitalAccountStatement<strong> `string` </br> Subscription Document.
 * <strong>historicalCapitalAccountStatements<strong> `string` </br> Subscription Document.
@@ -134,13 +131,15 @@ Array Object descriptor that encloses the list of legal documents or files assoc
 
 <strong>closeDoc<strong> `string`
 
+File ID of the compiled documents for a Closed Subscription.
+
 <strong>createdAt<strong> `date-time`
 
-Timestamp for the creation of the subscription.
+The date and time stamp when the subscription was Created.
 
 <strong>updatedAt<strong> `date-time`
 
-The date and time stamp when the subscirpiton information last modified.
+The date and time stamp when the subscription information was last modified.
 
 <strong>signature<strong> `string`
 
@@ -160,25 +159,25 @@ Subscriber acquisition Method for this subscirption.Predefined `enum` values are
 
 <strong>ownerId<strong> `string`
 
-The unique owner identifier of the subscripton.
+The unique identifier of the user who owns this object.
 
 <strong>profileId<strong> `string`
 
-A unique identifier assigned by the system while creating a user profile as an individual or an entity.
+A unique identifier of the subscriber profile.
 
 <strong>sideLetter<strong> `object`
 
-JSON object descriptor that encloses the side letter properties.Side letter is used for customized carry percentages for a particular investor.
+JSON object descriptor that encloses the Side Letter Properties that overrides the Deal settings for this subscription. Can override the Carry and Management Fee.
 
 * <strong>managementFee<strong> `object` </br>
-Object descriptor that encloses the  information for management fee deduction.
+Object descriptor that encloses the Side Letter Management Fee that overrides the fee settings on the deal for this subscription. 
   * <strong>amount<strong> `number` </br> The amount of the management fee.
   * <strong>duration<strong> `number` </br> Duration of Management Fee.
   * <strong>frequency<strong> `string` </br> Periodicity of Management Fee.
   * <strong>percent<strong> `number` </br>
   * <strong>type<strong> `string` </br> Type of management fee.
   * <strong>feesPaymentMethod<strong> `string` </br> Management fees payment method.
-  * <strong>isRecurring<strong> `boolean` </br> Checks whether the Management Fee is part of a recurring series.
+  * <strong>isRecurring<strong> `boolean` </br> Checks whether the Management Fee for the deal is assessed annually.
 * <strong>organizerCarryPercentage<strong> `object` </br>
   JSON object descriptor that encloses the organizer Carry Percentage related information.
   > Carry Percentage means the rate of return percentage above the initial investment after one year that needs to be paid to a deal **organizer**. It is in the deal **organizer's** discretion as to whether the Carry Percentage will be lower, and such determination may be made up until the date of the Initial Closing.
@@ -196,7 +195,7 @@ Carry Percentage Amount. Constraints `Min 0┃Max 100┃ multiple of 0.001`
 
 <strong>additionalProperties<strong> `object`
 
-JSON object descriptor for additional properties.
+JSON object descriptor that encloses a set of `key:value` pairs representing additional properties for this file.This can be useful for storing additional information in a structured format.  The enclosed data body must be in JSON format.
 
 <strong>additionalFiles<strong> `[string]`
 
@@ -219,7 +218,8 @@ Has the value _true_ if the subscription has an affiliate, or the value _false_ 
 
 <strong>closeId<strong> `string`
 
-Unique close identifier.
+The Unique internal identifier of the related Close Object for this subscription.
+
 > A close can represent the close of the entire deal or just a subset of investments (i.e. a tranche).
 
 <strong>capitalCallApproveType<strong> `enum`

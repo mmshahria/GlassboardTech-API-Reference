@@ -2,13 +2,9 @@ Generate a signing document for a specific subscription,of the document type tha
 
 # Attributes
 
-<strong>id<strong> `string`
-
-The unique internal identifier to locate this legal document.
-
 <strong>ownerId<strong> `string`
 
-The unique owner identifier for this document.
+The unique identifier of the user who owns this object.
 
 <strong>tenantId<strong> `string`
 
@@ -20,7 +16,7 @@ The name of the file. Constraints `2 to 1024 chars`.
 
 <strong>size<strong> `string`
 
-The size in bytes of the document object.The size of the document's content in bytes. 
+The size of the file's content in bytes.
 
 <strong>type<strong> `string`
 
@@ -28,39 +24,39 @@ The type of the file.
 
 <strong>key<strong> `string`
 
-
+A unique string for this file
 
 <strong>thumbnail<strong> `string`
 
-A short-lived link to the document's thumbnail, if available.A thumbnail for the document, if available. 
+A short-lived link to the file's thumbnail, if available.
 
 <strong>lastModified<strong> `string`
 
-The last time the document was modified.
+The last time the file was modified by anyone.
 
 <strong>createdAt<strong> `date-time`
 
-The time at which the document was created.
+The time and date at which the file was created.
 
 <strong>updatedAt<strong> `date-time`
 
-The time at which the document was updated.
+The time and date at which the file was updated.
 
 <strong>deletedAt<strong> `date-time`
 
-The time at which the document was deleted.
+The time and date at which the file was deleted.
 
 <strong>isDeleted<strong> `boolean`
 
-Has the value _true_ if this particular document is deleted; otherwise, the value _false_.
+Has the value _true_ if this particular file is deleted; otherwise, the value _false_.
 
 <strong>generating<strong> `boolean`
 
-
+Has the value true if this file is currently being generated (If dynamically created); otherwise, the value false.
 
 <strong>isPublic<strong> `boolean`
 
-Has the value _true_ if this particular document is Public; otherwise, the value _false_.
+Has the value _true_ if this particular file is Public; otherwise, the value _false_.
 
 <strong>additionalProperties<strong> `object`
 
