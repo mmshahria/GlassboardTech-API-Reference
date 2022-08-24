@@ -230,4 +230,4 @@ Has the value _true_ if the asset is in the deleted status or the value _false_ 
 
 <strong>additionalProperties</strong> `object`
 
-JSON object descriptor that encloses additional properties related to the asset.
+JSON object descriptor that encloses a set of `key:value` pairs representing additional properties related to the asset.This can be useful for storing additional information in a structured format.  The enclosed data body must be in JSON format.

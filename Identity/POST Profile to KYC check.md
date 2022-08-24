@@ -7,4 +7,4 @@ Profile identity check to validate the authenticity using supplied `profileId` a
 
 <strong>profileId*</strong> `string`
 
-Specify the unique identifier of an existing profile.
+Specify the unique identifier of an existing profile on which the check will run.

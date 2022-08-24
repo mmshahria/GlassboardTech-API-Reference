@@ -36,15 +36,15 @@ The last time the document was modified by anyone.
 
 <strong>createdAt<strong> `date-time`
 
-The time and date at which the document was created.
+The date and time at which the document was created.
 
 <strong>updatedAt<strong> `date-time`
 
-The time and date at which the document was updated.
+The date and time at which the document was updated.
 
 <strong>deletedAt<strong> `date-time`
 
-The time and date at which the document was deleted.
+The date and time at which the document was deleted.
 
 <strong>isDeleted<strong> `boolean`
 

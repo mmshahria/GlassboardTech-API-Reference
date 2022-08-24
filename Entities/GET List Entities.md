@@ -22,6 +22,8 @@ The Regulation Type for the Entity. Allowed enum values are `REGULATION_D┃REGU
 
 The Regulation D Exemption. Allowed `enum` values are  `b┃c`.
 
+> Regulation D (Reg D) is a Securities and Exchange Commission (SEC) rule establishing exemptions for private placements.
+
 <strong>ein<strong> `string┃null`
 
 The EIN number for the Entity. Pattern `^(0[1-9]|[1-9]\d)-\d{7}$`.
@@ -29,7 +31,9 @@ The EIN number for the Entity. Pattern `^(0[1-9]|[1-9]\d)-\d{7}$`.
 <strong>arbitration<strong> `object`
 
 JSON object descriptor that encloses a set of `key:value` pairs representing arbitration location information.
+
 > Arbitration is a mechanism whereby a disagreement is submitted, by consent of the parties, to one or more arbitrators who render a legally enforceable ruling.
+
 * <strong>city<strong> `string`
 Arbitration City name.
 * <strong>state<strong> `string`
@@ -39,11 +43,9 @@ Arbitration Country name.
 
 <strong>registeredAgent<strong> `string┃null`
 
-Registered Agent associated with this entity.The value can be `null` if there is no registered agent for this entity. 
+Registered Agent associated with this entity.The value can be `null` if there is no registered agent for this entity.
 
-<strong>assetComposition<strong> `string┃null`
-
-Asset Composition.The value can be `null` if there is no Asset Composition for this entity. 
+> A registered agent is a firm or person appointed to receive legal documents when a corporate entity is a party to a legal action, such as a lawsuit or summons.
 
 <strong>bankAccount<strong> `object`
 
@@ -89,11 +91,13 @@ Management Fees Payment Method.
 
 JSON object descriptor that encloses a set of `key:value` pairs representing Expense Reserve information.
 
-* <strong>amount<strong> `number`
+> The Expense Reserve is a liability account for expenditures incurred but not yet paid.
+
+* <strong>amount<strong> `number` </br>
 Expense Reserve Amount. Constraints `multiple of 0.01`.
-* <strong>type<strong> `enum`
+* <strong>type<strong> `enum` </br>
 Expense Reserve Type. Allowed enum values are `Flat Fee┃Percent`.The variable must be equal to one of the values that have been predefined for it.
-* <strong>calculationMethod<strong> `enum`
+* <strong>calculationMethod<strong> `enum` </br>
 Fee calculation method. Allowed `enum` values are `minus┃plus`.The variable must be equal to one of the values that have been predefined for it.
 
 <strong>countryOfFormation<strong> `string`
@@ -114,13 +118,10 @@ JSON object descriptor that encloses the Legal Inc Order Details associated with
 * <strong>orderPlacedDate<strong> `date-time` </br>The date & time at which Order Placed On.
 * <strong>orderFulfilledDate<strong> `date-time` </br> The date & time at whichOrder Fulfilled On.
 
-<strong>id<strong> `string`
-
-A unique identifier to locate this Entity assigned by the system.
-
 <strong>tenantId<strong> `string`
 
 A unique identifier used for API authentication and authorization.
+
 >Tenant refers to the end user of this API and It's required for identity and access management.
 
 <strong>dealId<strong> `string`
@@ -158,15 +159,15 @@ Has the value _true_ if this particular entity is deleted; otherwise, the value 
 
 <strong>managerId<strong> `string┃null`
 
-The unique manager identifier for this entity.
+The ID of the Company object representing the Manager for this Entity
 
 <strong>masterEntityId<strong> `string┃null`
 
-The unique master entity identifier for this entity.
+The ID of the Company Object representing the Master Entity for this Entity (If series LLC or LP).
 
 <strong>ownerId<strong> `string`
 
-A unique identifier of the owner for this deal. 
+The unique identifier of the user who owns this object.
 
 <strong>additionalProperties<strong> `object`
 

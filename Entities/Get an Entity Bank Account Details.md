@@ -13,7 +13,7 @@ Counter party identifier for banking provider.
 
 <strong>providerMeta<strong> `object`
 
-Object descriptor that encloses the provider meta details.
+JSON Object descriptor that encloses the provider meta details.
 
 <strong>bankName<strong> `string`
 
