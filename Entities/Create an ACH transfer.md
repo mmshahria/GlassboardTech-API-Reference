@@ -5,7 +5,9 @@ Use the Create an ACH Transfer endpoint to place the transfer into the queue for
 # Parameter
 
 <strong>amount*<strong> `number`
-Constraints Min 0.01
+
+A positive integer representing how much to transfer.Constraints `Min 0.01`.
 
 <strong>beneficiaryId*<strong> `string`
-Constraints Min 1 chars
+
+The unique beneficiary identifier for this wire transfer.Constraints `Min 1 chars`.

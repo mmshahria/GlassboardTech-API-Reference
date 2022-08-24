@@ -195,7 +195,7 @@ Carry Percentage Amount. Constraints `Min 0┃Max 100┃ multiple of 0.001`
 
 <strong>additionalProperties<strong> `object`
 
-JSON object descriptor that encloses a set of `key:value` pairs representing additional properties for this file.This can be useful for storing additional information in a structured format.  The enclosed data body must be in JSON format.
+JSON object descriptor that encloses a set of `key:value` pairs representing additional properties for this subscription.This can be useful for storing additional information in a structured format.  The enclosed data body must be in JSON format.
 
 <strong>additionalFiles<strong> `[string]`
 
