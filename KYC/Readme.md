@@ -26,12 +26,13 @@ JSON object descriptor for the response body of `/kyc` endpoint.
      * <strong>politicallyExposedPerson</strong> `enum` <br> Check if politically exposed person. Valid result statuses are `IN_PROGRESS┃COMPLETE┃EXCEPTION`. 
      * <strong>sanction</strong> `enum` <br> Checks the sanction background of the individual. Valid result status are `IN_PROGRESS┃COMPLETE┃EXCEPTION`. 
 
+
    * <strong>providerMeta*</strong> `object` <br> JSON object descriptor that encloses important validation check results from 3rd party KYC validators.
    * <strong>applicantId</strong> `string` <br> A unique identifier for the applicant of KYC check.
-   * <strong>checkId</strong> `string` <br> A unique identifier.
-   * <strong>reason</strong> `string` <br> Additional KYC check reason
+   * <strong>checkId</strong> `string` <br> The unique identifier records the type of check done on a particular profile.
+   * <strong>reason</strong> `string` <br> Additional KYC check reason.
    * <strong>result</strong> `string` <br> Result of the KYC check.
-   * <strong>profileId</strong> `string` <br> A unique identifier assigned by the system while creating an **organizer** profile as an individual or an entity.
-   * <strong>ownerId</strong> `string` <br> A unique identifier for the owner.
-   * <strong>overrideComment</strong> `string` <br> Overridden comment if any.
+   * <strong>profileId</strong> `string` <br> A unique identifier of the profile on which the KYC was run.
+   * <strong>ownerId</strong> `string` <br> The unique identifier of the user who owns this object.
+   * <strong>overrideComment</strong> `string` <br> Overridden comment,if any.
    * <strong>migratedToId</strong> `string` <br> New Id to which the individual has been migrated.
