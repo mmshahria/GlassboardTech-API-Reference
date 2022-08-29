@@ -37,7 +37,7 @@ JSON _array_ object descriptor that encloses classification tiers of Organizer c
     * <strong>breakpoint<strong> `number` </br>
 Carry Percentage Breakpoint.Top point of the tier that breaks to the next level (0 indicates no maximum, i.e. top-tier).
     * <strong>amount<strong> `number` </br>
-Carry Percentage Amount. Constraints `Min 0┃Max 100┃ multiple of 0.001`
+Carry Percentage Amount for this tier. Constraints `Min 0┃Max 100┃ multiple of 0.001`
 
 <strong> additionalCarryRecipients </strong> `[object]`
 
@@ -68,7 +68,7 @@ JSON _array_ object descriptor that encloses the details of Additional carry rec
 * <strong> taxIdType </strong> `string` </br> Type of the tax identification.
 * <strong> taxId</strong> `string` Unique tax identification number.
 * <strong> carryPercentage </strong> `number` </br> Additional carry percentage specified by a deal _organizer_. _Data-type_ `number` is used for any numeric type, either integers or floating point numbers. Minimum valid _value-range_ is 0 to 100.Constraints `Min 0┃Max 100┃ multiple of 0.001`.
-* <strong> validations <strong> `[string]` </br> JSON array object descriptor that encloses validationIDs for KYC/AML check for the additional carry recipient.Each array index consists of disparate validation information for a specific Additional carry recipient.
+* <strong> validations <strong> `[string]` </br> JSON array object descriptor that encloses validation IDs for KYC/AML check for the additional carry recipient.Each array index consists of disparate validation information for a specific Additional carry recipient.
   
 <strong> name* </strong> `string`
 
@@ -93,9 +93,9 @@ An expected close date and time for this deal. Must be formatted as `1970-01-01T
 
 A Set of `key-value` pairs representing marketing information for the deal.
       
-   * <strong>logo</strong> `string` <br>
+   * <strong>logo</strong> `string` <br> Marketing Logo.
   > A logo is a graphic mark, emblem, or symbol that facilitates and promotes public identification and recognition of a corresponding deal's business entity. It may have an abstract or figurative design, or it may include the name it symbolizes as a wordmark.
-   * <strong>tagline</strong> `string`
+   * <strong>tagline</strong> `string` <br> Marketing Tagline.
    > A tagline is a catchphrase or memorable statement associated with the corresponding deal's business entity.
    * <strong>videoUrl<strong> `string` <br>
   Marketing Video URL.
