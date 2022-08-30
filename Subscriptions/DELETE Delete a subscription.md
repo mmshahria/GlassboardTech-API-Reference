@@ -1,1 +1,1 @@
-Delete an existing subscription records from the current user's (API end user) data source. Supply the unique `subscriptionId` in the path parameter to execute delete operation to a specific subscription for the current user (API end user).
+Delete an existing subscription records from the current user's (API end user) data source. Supply the unique `subscriptionId` in the path parameter to execute the delete operation to a specific subscription for the current user (API end user).
