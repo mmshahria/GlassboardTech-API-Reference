@@ -12,4 +12,4 @@ A unique internal identifier to locate this user role mapping.
 
 <strong>name<strong> `string`
 
-A unique name used to identify this user role mapping.
+A unique role name used to identify this user role mapping.
