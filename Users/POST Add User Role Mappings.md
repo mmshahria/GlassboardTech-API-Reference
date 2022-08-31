@@ -10,7 +10,7 @@ JSON array object descriptor that encloses an array list of user roles. Each _ar
 
 <strong>id<strong> `string`
 
-A unique internal identifier to locate this user role mapping.
+A unique role name used to identify this user role mapping.Example: `investor` , `view-consent` , `founder`.
 
 <strong>name<strong> `string`
 

@@ -143,8 +143,7 @@ JSON array object descriptor that encloses additional signatories (Individual En
   * <strong> ownerId</strong> `string` <br> A unique identifier of the owner for this additional signatory. 
   * <strong> name</strong> `string` </br> Full name of the additional signatory (Individual Entity or Person).Constraints `2 to 1024 chars`.
   * <strong> type</strong> `string` </br> Type of the additional signatory.Constraints `2 to 1024 chars`.
-  * <strong> title</strong> `string` </br> The title of the signer.Constraints `2 to 1024 chars`.
-   > In some settings, a person's title may consist of one or more words placed before or after their given name. There are a number of ways it might be used, including heredity, official status, or academic or professional certification.
+  * <strong> title</strong> `string` </br> The title of the signer.Constraints `2 to 1024 chars`.In some settings, a person's title may consist of one or more words placed before or after their given name. There are a number of ways it might be used, including heredity, official status, or academic or professional certification.
   * <strong> isUSBased</strong> `boolean` <br> Has the value _true_ if the signatory resides in the US, or the value _false_ if the signatory resides outside of the US territory.
   * <strong> address</strong> `object` <br> JSON object descriptor that encloses physical address details of the additional signatory.
   
@@ -192,7 +191,7 @@ JSON object descriptor that encloses the details of beneficial owner (Individual
   * <strong> email</strong> `string` <br> Email address associated with the beneficial owner.
   * <strong> taxDetails</strong> `object` <br> JSON object descriptor that encloses tax document details of the additional signatory.
     * <strong> type*</strong> `enum`  <br> Type of legal tax document. Predefined `enum` values are `ssn┃itin┃ftin`.
-    * <strong> value*</strong> `string` <br> Tax Details Value.
+    * <strong> value*</strong> `string` <br> Unique identification number for the tax document.
 
   * <strong> dateOfBirth</strong> `string` <br> Date of birth of the additional signatory.
   * <strong> stateOfFormation</strong> `string` <br> State of formation if the beneficial owner is an Entity.

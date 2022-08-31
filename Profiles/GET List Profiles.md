@@ -1,6 +1,11 @@
 Retrieves the list of profiles for the current user (API end user). This endpoint returns data in compliance with it's authorized access level.
 
-# Attributes
+# Parameters
+
+<strong>data<strong> `[object]`
+
+JSON array object descriptor that encloses the list of profiles served from the database. Each array index consists of a disparate profile object which contains all the details of that profile.
+
 
 <strong> profileType</strong> `enum`
 

@@ -13,7 +13,7 @@ A unique identifier of a particular deal for this subscription.It refers to a pa
 
 <strong>name*<strong> `string`
 
-The Name of the particular deal for this subscription.Constraints `2 to 1024 chars`.
+The Name of the Subscriber for this subscription.Constraints `2 to 1024 chars`.
 
 <strong>email*<strong> `string`
 
@@ -69,7 +69,7 @@ Unique reverse transaction identifier for this subscription.
 
 <strong>distributionTransactionIds<strong> `[string]`
 
-JSON object descriptor that encloses an array list of distribution transaction's unique identifiers if the subscription consists of disparate subscribers. Each _array_ index consists of a distributed transaction identifier.
+JSON object descriptor that encloses an array list of distribution transaction's unique identifiers if the subscription consists of disparate subscribers. Each _array_ index consists of a disparate distributed transaction identifier.
 
 <strong>isDocsSigned<strong> `boolean`
 
@@ -77,7 +77,7 @@ Has the value _true_ if the subscription documents are signed by the subscriber 
 
 <strong>isAmountMatched<strong> `boolean`
 
-Has the value _true_ if the subscription `amount` matched or the value _false_ if it's not.
+Has the value _true_ if the subscription amount matched (documents amount match the field amount) or the value _false_ if it's not.
 
 <strong>isKycAmlPassed<strong> `boolean`
 
@@ -89,7 +89,7 @@ JSON _array_ object descriptor that encloses the list of signers for this subscr
 
 <strong>bankAccount<strong> `object`
 
-JSON object descriptor that encloses the details of bank account for this subscription.
+JSON object descriptor that encloses the details of the bank account used to send the subscription amount for this subscription.
 
 <strong>fundingInfo<strong> `object`
 
@@ -102,7 +102,7 @@ JSON object descriptor that encloses the inforamtion on where the money used to 
 
 <strong>accountTransaction<strong> `object`
 
-JSON object descriptor that encloses the details of account transaction for this subscription.
+JSON object descriptor that encloses the details of account transaction for this subscription.Potentially sent from investor but not yet made it into the entity holding account.
 
 <strong>documents<strong> `object`
 
@@ -127,7 +127,7 @@ JSON object descriptor that encloses tax-related information. Each _array_ index
 
 <strong>files<strong> `[string]`
 
-Array Object descriptor that encloses the list of legal documents or files associated with the subscription.
+Array Object descriptor that encloses the list of legal documents or files associated with this subscription.
 
 <strong>closeDoc<strong> `string`
 
@@ -171,31 +171,31 @@ JSON object descriptor that encloses the Side Letter Properties that overrides t
 
 * <strong>managementFee<strong> `object` </br>
 Object descriptor that encloses the Side Letter Management Fee that overrides the fee settings on the deal for this subscription. 
-  * <strong>amount<strong> `number` </br> The amount of the management fee.
-  * <strong>duration<strong> `number` </br> Duration of Management Fee.
-  * <strong>frequency<strong> `string` </br> Periodicity of Management Fee.
-  * <strong>percent<strong> `number` </br>
-  * <strong>type<strong> `string` </br> Type of management fee.
-  * <strong>feesPaymentMethod<strong> `string` </br> Management fees payment method.
+  * <strong>amount<strong> `number` </br> The amount of the side letter management fee.
+  * <strong>duration<strong> `number` </br> Duration of side letter Management Fee.
+  * <strong>frequency<strong> `string` </br> Periodicity of side letter Management Fee.
+  * <strong>percent<strong> `number` </br> Side letter management fee Percent.
+  * <strong>type<strong> `string` </br> Type of side letter management fee.
+  * <strong>feesPaymentMethod<strong> `string` </br> Side letter management fees payment method.
   * <strong>isRecurring<strong> `boolean` </br> Checks whether the Management Fee for the deal is assessed annually.
 * <strong>organizerCarryPercentage<strong> `object` </br>
   JSON object descriptor that encloses the organizer Carry Percentage related information.
-  > Carry Percentage means the rate of return percentage above the initial investment after one year that needs to be paid to a deal **organizer**. It is in the deal **organizer's** discretion as to whether the Carry Percentage will be lower, and such determination may be made up until the date of the Initial Closing.
-  * <strong>type<strong>: `enum` </br>
+  > Carry Percentage means the rate of return percentage above the initial investment after onside letter e year that needs to be paid to a deal **organizer**. It is in the deal **organizer's** discretion as to whether the Carry Percentage will be lower, and such determination may be made up until the date of the Initial Closing.
+  * <strong>type<strong> `enum` </br>
 Type of Organizer Carry percentage. Predefined `enum` values are  `percent┃flat`.
   * <strong>amount<strong>: `number` </br>
 The amount of Organizer Carry percentage. Constraints `multiple of 0.01`
   * <strong>tiers<strong>: `[object]` </br>
 JSON _array_ object descriptor that encloses classification tier of Organizer carry percentage.
     * <strong>breakpoint<strong> `number` </br>
-Carry Percentage Breakpoint.
+Carry Percentage Breakpoint for this tier.Top point of the tier that breaks to the next level (0 indicates no maximum, i.e. top-tier).
     * <strong>amount<strong> `number` </br>
-Carry Percentage Amount. Constraints `Min 0┃Max 100┃ multiple of 0.001`
+Carry Percentage Amount for this tier. Constraints `Min 0┃Max 100┃ multiple of 0.001`.
 
 
 <strong>additionalProperties<strong> `object`
 
-JSON object descriptor that encloses a set of `key:value` pairs representing additional properties for this subscription.This can be useful for storing additional information in a structured format.  The enclosed data body must be in JSON format.
+JSON object descriptor that encloses a set of `key:value` pairs representing additional properties for this subscription.This can be useful for storing additional information in a structured format.The enclosed data body must be in JSON format.
 
 <strong>additionalFiles<strong> `[string]`
 

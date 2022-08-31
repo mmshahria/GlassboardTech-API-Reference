@@ -190,7 +190,7 @@ The amount of Organizer Carry percentage. Constraints `multiple of 0.01`
   * <strong>tiers<strong>: `[object]` </br>
 JSON _array_ object descriptor that encloses classification tier of Organizer carry percentage.
     * <strong>breakpoint<strong> `number` </br>
-Carry Percentage Breakpoint.Top point of the tier that breaks to the next level (0 indicates no maximum, i.e. top-tier).
+Carry Percentage Breakpoint for this tier.Top point of the tier that breaks to the next level (0 indicates no maximum, i.e. top-tier).
     * <strong>amount<strong> `number` </br>
 Carry Percentage Amount for this tier. Constraints `Min 0┃Max 100┃ multiple of 0.001`.
 

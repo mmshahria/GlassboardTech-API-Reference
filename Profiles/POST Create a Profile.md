@@ -170,8 +170,6 @@ JSON array object descriptor that encloses additional signatories (Individual En
 
 JSON object descriptor that encloses the details of beneficial owner (Individual Entity or Person) for this profile.
 
-> Individuals or natural people who ultimately owns this profile.
-
   * <strong> id</strong> `string` <br> A unique identifier.
   * <strong> ownerId</strong> `string` <br> A unique identifier of the owner for this beneficial owner. 
   * <strong> name</strong> `string` </br> Full name of the beneficial owner. 
@@ -211,7 +209,7 @@ Account Number. Constraints Max 64 chars.
 Custodian Name. Constraints Max 128 chars.
 
 <strong>id<strong> `string`
-A unique identifier assigned by the system while creating a user profile as an individual or an entity.
+A unique identifier assigned by the system while creating a user profile as an individual (Person) or an entity.
 
 <strong> name</strong> `string` 
 
@@ -285,7 +283,7 @@ Has the value true if the profile is deleted or the value false if it's not dele
 
 <strong> additionalProperties </strong> `object`
 
-JSON object descriptor for additional properties.
+JSON object descriptor that encloses a set of `key:value` pairs representing additional properties for this Profile.This can be useful for storing additional information in a structured format.The enclosed data body must be in JSON format.
 
   * <strong> formedToInvestInFund</strong> `boolean` </br> Has the value true if this profile specifically created to invest in a certain fund, otherwise the value is flase.
   * <strong> isInvestmentCompany</strong> `boolean`
