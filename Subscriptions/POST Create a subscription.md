@@ -79,7 +79,7 @@ Has the value _true_ if the subscription documents are signed by the subscriber 
 
 <strong>isAmountMatched<strong> `boolean`
 
-Has the value _true_ if the subscription `amount` matched or the value _false_ if it's not.
+Has the value _true_ if the subscription amount matched (documents amount match the field amount) or the value _false_ if it's not.
 
 <strong>isKycAmlPassed<strong> `boolean`
 
@@ -91,7 +91,7 @@ JSON _array_ object descriptor that encloses the list of signers for this subscr
 
 <strong>bankAccount<strong> `object`
 
-JSON object descriptor that encloses the details of bank account for this subscription.
+JSON object descriptor that encloses the details of the bank account used to send the subscription amount for this subscription.
 
 <strong>fundingInfo<strong> `object`
 
@@ -190,9 +190,9 @@ The amount of Organizer Carry percentage. Constraints `multiple of 0.01`
   * <strong>tiers<strong>: `[object]` </br>
 JSON _array_ object descriptor that encloses classification tier of Organizer carry percentage.
     * <strong>breakpoint<strong> `number` </br>
-Carry Percentage Breakpoint.
+Carry Percentage Breakpoint.Top point of the tier that breaks to the next level (0 indicates no maximum, i.e. top-tier).
     * <strong>amount<strong> `number` </br>
-Carry Percentage Amount. Constraints `Min 0┃Max 100┃ multiple of 0.001`
+Carry Percentage Amount for this tier. Constraints `Min 0┃Max 100┃ multiple of 0.001`.
 
 
 <strong>additionalProperties<strong> `object`
