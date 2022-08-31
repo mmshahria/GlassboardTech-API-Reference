@@ -13,7 +13,7 @@ A unique internal identifier to locate this user role mapping.
 
 * <strong>name<strong> `string`
 
-A unique role name used to identify this user role mapping.
+A unique role name used to identify this user role mapping.Example: `investor` , `view-consent` , `founder`.
 
 * <strong>composite<strong> `boolean`
 
