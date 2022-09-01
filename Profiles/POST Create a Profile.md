@@ -220,7 +220,7 @@ The Type of Entity If the profile is representing an entity.
 _Data-type_ `enum` Consists of predefined legal business entity type `LIMITED_LIABILITY_COMPANY┃LIMITED_PARTNERSHIP┃C_CORPORATION┃S_CORPORATION┃GENERAL_PARTNERSHIP┃501_C_NONPROFIT┃FOREIGN_ENTITY┃INDIVIDUAL┃CORPORATION`. The variable must be equal to one of the values that have been predefined for it.
 
 <strong>dateOfFormation<strong> `date`
-The Date of Formation of the Entity.
+The Date of Formation of the Entity(If the profile represents an entity).
 
 <strong> stateOfFormation</strong> `string`
 

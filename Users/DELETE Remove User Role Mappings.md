@@ -8,8 +8,8 @@ JSON array object descriptor that encloses an array list of user roles. Each _ar
 
 <strong>id<strong> `string`
 
-A unique role name used to identify this user role mapping.Example: `investor` , `view-consent` , `founder`.
+A unique role name used to identify this user role mapping.
 
 <strong>name<strong> `string`
 
-A unique role name used to identify this user role mapping.
+A unique role name used to identify this user role mapping.Example: `investor` , `view-consent` , `founder`.
