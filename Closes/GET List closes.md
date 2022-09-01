@@ -7,12 +7,12 @@ JSON object descriptor that encloses the list of closes served from the database
 
 <strong>page </strong> `number`
 
-The total number of pages returned for the API call. This can be used as a query string parameter.
+The current page of results returned for the API call. This can be used as a query string parameter.
 
 <strong>perPage </strong> `number`
 
-The total count of the list of closes returned per page. This attribute can be used as a query string parameter to specify the number of closes the API call shall return.
+The total count closes or results returned per page. This attribute can be used as a query string parameter.
 
 <strong>totalCount </strong> `number`
 
-The total count of the closes lists the API call returned.
+The total count of the closes or results the API call returned.

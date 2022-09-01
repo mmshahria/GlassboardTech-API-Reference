@@ -239,11 +239,14 @@ The total number of expected closes on this deal.
 
 > A close can represent the close of the entire deal or just a subset of investments (i.e. a tranche).
 
+<strong>page </strong> `number`
+
+The current page of results returned for the API call. This can be used as a query string parameter.
 
 <strong>perPage</strong> `number`
 
-The total count of deals returned per page. This can be specified as a query string parameter.
+The total count of deals or results returned per page. This can be specified as a query string parameter.
 
 <strong>totalCount</strong> `number`
 
-Total count of the deals list the API call returned.
+Total count of the deals or results the API call returned.

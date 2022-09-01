@@ -233,10 +233,10 @@ Has the value _true_ if the asset is in the deleted status or the value _false_ 
 JSON object descriptor that encloses a set of `key:value` pairs representing additional properties related to the asset.This can be useful for storing additional information in a structured format.  The enclosed data body must be in JSON format.
 
 <strong>page<strong> `number`
-The total number of page. This can be specified as a query string parameter.
+The current page of results returned for the API call. This can be specified as a query string parameter.
 
 <strong>perPage<strong> `number`
-The total count of assets returned per page. This can be specified as a query string parameter.
+The total count of assets or results returned per page. This can be specified as a query string parameter.
 
 <strong>totalCount<strong> `number`
-Total count of the assets returned.
+Total count of the assets or results returned.

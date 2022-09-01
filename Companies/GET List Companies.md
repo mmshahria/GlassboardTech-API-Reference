@@ -136,3 +136,15 @@ Arbitration State.
 
 Describe the management strategy that will be used for the business.
 Allowed enum values are `Solely by the owner(s) (Member-managed)┃Some, but not all, owners (Manager-managed)┃By the owner(s) and other managers (Manager-managed)┃Solely by the manager(s) (Manager-Managed)`.
+
+<strong>page </strong> `number`
+
+The current page of results returned for the API call. This can be used as a query string parameter.
+
+<strong>perPage</strong> `number`
+
+The total count of companies or results returned per page. This can be specified as a query string parameter.
+
+<strong>totalCount</strong> `number`
+
+Total count of the companies or results the API call returned.
