@@ -275,7 +275,7 @@ Timestamp for the creation of the profile.
 
 <strong> updatedAt</strong> `date-time`
 
-Timestamp for the last update record.
+Timestamp for the last update record of the profile.
 
 <strong> isDeleted</strong> `boolean`
 

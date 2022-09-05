@@ -236,7 +236,7 @@ JSON object descriptor that encloses a set of `key:value` pairs representing add
 The current page of results returned for the API call. This can be specified as a query string parameter.
 
 <strong>perPage<strong> `number`
-The total count of assets or results returned per page. This can be specified as a query string parameter.
+The number of assets or results returned per page. This can be specified as a query string parameter.
 
 <strong>totalCount<strong> `number`
 Total count of the assets or results returned.

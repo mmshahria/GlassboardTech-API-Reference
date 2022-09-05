@@ -299,3 +299,13 @@ JSON object descriptor for additional properties.
   * <strong> fundDocumentTemplateId</strong> `string` </br>	The Default Fund Document Template ID to use for the Deal.
   * <strong> passportOrId</strong> `string` 
   * <strong> isDisregarded<strong> `boolean` </br> Has the value true if the profile is a disregarded entity or trust, otherwise the value is false.
+
+
+<strong>page<strong> `number`
+The current page of results returned for the API call. This can be specified as a query string parameter.
+
+<strong>perPage<strong> `number`
+The total count of Profiles or results returned per page. This can be specified as a query string parameter.
+
+<strong>totalCount<strong> `number`
+Total count of the Profiles or results returned.

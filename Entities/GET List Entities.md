@@ -182,10 +182,10 @@ The legal entity's registration number.
 The legal entity's official formation date.
 
 <strong>page<strong> `number`
-The total number of page. This can be specified as a query string parameter.
+The current page of results returned for the API call. This can be specified as a query string parameter.
 
 <strong>perPage<strong> `number`
-The total count of Entities returned per page. This can be specified as a query string parameter.
+The number of Entities or results returned per page. This can be specified as a query string parameter.
 
 <strong>totalCount<strong> `number`
-Total count of the Entites returned.
+Total count of the Entites or results returned.

@@ -239,10 +239,10 @@ The type of capital call approval.Allowed `enum` values are `PRE-APPROVAL┃MANU
 > A capital call is the process by which a fund/deal manager asks the fund/deal investors/subscribers to contribute their pro rata portion of their fund commitments.
 
 <strong>page<strong> `number`
-The total number of page. This can be specified as a query string parameter.
+The current page of results returned for the API call. This can be specified as a query string parameter.
 
 <strong>perPage<strong> `number`
-The total count of subscriptions returned per page. This can be specified as a query string parameter.
+The number of subscriptions or results returned per page. This can be specified as a query string parameter.
 
 <strong>totalCount<strong> `number`
 Total count of the subscriptions returned.
